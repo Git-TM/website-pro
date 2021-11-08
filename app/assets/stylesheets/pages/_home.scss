@@ -1,1 +1,60 @@
 // Specific CSS for your home-page
+body{
+  margin: 0;
+  font-family: 'Yaldevi', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  // color: white;
+  background-color: #fff;
+}
+
+.container {
+  padding: 30px 10px;
+}
+
+.background-sombre{
+  background-color: $backblue;
+  width: 100%;
+  padding: 30px 0px;
+}
+.background-sombre h2{
+  color:white;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Yaldevi', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Yaldevi', sans-serif;
+  text-align: center;
+  font-weight:lighter;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Yaldevi', sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-family: 'Yaldevi', sans-serif;
+}
+
+span {
+  text-align: center;
+}
+
+.title-white{
+  color: white;
+}
+
+.title-sombre{
+  color:$backblue;
+}

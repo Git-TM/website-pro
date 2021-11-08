@@ -1,0 +1,90 @@
+@media(max-width: 1201px) {
+  .cards {
+
+  }
+}
+
+@media(max-width: 992px) {
+
+  .container{
+    padding: 30px 10px;
+  }
+  // banner
+     .banner {
+    display:block;
+  }
+
+  .banner-photo {
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .banner-text{
+    position: absolute;
+    bottom: 20%;
+    left : 10%;
+    right: 10%;
+    color: black;
+  }
+
+  .bloc-apropos{
+    display: block;
+    text-align: center;
+    // margin: 0 auto;
+  }
+
+  .photo-apropos{
+    margin-bottom: 20px;
+  }
+
+  .desc-a-propos{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+}
+
+@media(max-width: 742px) {
+
+  #clouds{
+    display:none;
+  }
+    // réalisations
+
+  .container-realisation{
+    display: block;
+  }
+
+  .card-mission{
+    width: 90%;
+  }
+  .realisation-desc{
+    margin-top: 20px;
+    width: 90%;
+  }
+  // skill
+  .container-skill{
+    padding: 0;
+  }
+  .skill-desc-photo{
+    width: 95px;
+    object-fit: contain;
+  }
+
+  .skill{
+    display:block;
+  }
+
+  .skill-desc{
+    font-size: 12px;
+  }
+  .nav-categories{
+  display:none;
+}
+
+}
+
+@media(max-width: 460px) {
+}

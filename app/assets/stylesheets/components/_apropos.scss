@@ -1,0 +1,18 @@
+.bloc-apropos{
+  display:flex;
+  margin: 30px 0px;
+  justify-content: space-between;
+}
+
+.desc-a-propos{
+  width: 35%;
+  color: black;
+  letter-spacing: .03em;
+  line-height: 1.7em;
+  text-align: justify;
+}
+
+.photo-a-propos{
+  width: 60%;
+  border-radius: 30px;
+}

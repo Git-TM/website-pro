@@ -1,0 +1,32 @@
+.form-container{
+  display: flex;
+  justify-content: space-between;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 20, 40, .7);
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin: 30px auto;
+  // background-color:rgba(0, 20, 40, 1);
+}
+
+.form-contact{
+  width: 60%;
+  text-align: center;
+  color: black;
+}
+
+.form-desc-container{
+  width: 35%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-inlin{
+  display:flex;
+  justify-content: space-between;
+}
+
+.input-type{
+  width: 45%;
+}

@@ -1,0 +1,11 @@
+.primary-button{
+  color: white;
+  /* border: 1px solid rgba(0,0,0, .5); */
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: lighter;
+  /* opacity: .8; */
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  background-color: $red;
+}
