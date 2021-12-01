@@ -1,0 +1,32 @@
+{
+  "project1": {
+    "name": "Applications d'enrichissement de données",
+    "context": "L'entreprise Goodwill disposait d'un fichier de 13.000 noms d'entreprises et souhaitait obtenir l'ensemble des coordonnées des dirigeants",
+    "weblink": "",
+    "githublink": "back-csv.png",
+    "generaltags": "Growth Hacking, Enrichissement de données",
+    "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
+    "category": "Projets personnels, Growth / Digital, Développement Web",
+    "projecttype": "Application web",
+    "imgurl": "back-csv.png",
+    "logourl": "logo-kaioit.jpeg",
+    "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
+    "features": "Mise en place d'une application Rails, Ajout de Sidekiq"
+  },
+
+  "project2": {
+    "name": "Applications d'enrichissement de données",
+    "context": "L'entreprise Goodwill disposait d'un fichier de 13.000 noms d'entreprises et souhaitait obtenir l'ensemble des coordonnées des dirigeants",
+    "weblink": "",
+    "githublink": "back-csv.png",
+    "generaltags": "Growth Hacking, Enrichissement de données",
+    "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
+    "description": "L'entreprise Goodwill disposait d'un fichier de 13.000 noms d'entreprises et souhaitait obtenir l'ensemble des coordonnées des dirigeants",
+    "category": "Projets personnels, Growth / Digital, Développement Web",
+    "projecttype": "Application web",
+    "imgurl": "back-csv.png",
+    "logourl": "logo-kaioit.jpeg",
+    "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
+    "features": "Mise en place d'une application Rails, Ajout de Sidekiq"
+  }
+}

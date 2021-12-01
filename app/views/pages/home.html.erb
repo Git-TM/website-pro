@@ -88,7 +88,68 @@
   </div>
 </div>
 
+<%# Réalisations itérations %>
+
+<div class="background-sombre" id="realisations">
+  <div class="container">
+    <h2 class="white">Mes réalisations</h2>
+    <div class="cards-real">
+      <% Project.all. each do |project| %>
+        <a href="#" class="card">
+          <div class="card__head">
+            <%# <div class="card__image"></div> %>
+            <img src="<%= project.imgurl %>" alt="" class="card__image" height="300px">
+            <%= image_tag "admin/filename.jpg", class"" %>
+            <div class="card__author">
+              <div class="author">
+                <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80" alt="Author of Tobias Reich" class="author__image">
+                <div class="author__content">
+                  <p class="author__header"> <%= project.projectname %></p>
+                  <p class="author__subheader">Goodwill</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__body">
+            <h2 class="card__headline"><%= project.projectname %></h2>
+            <p class="card__text"><%= project.context %></p>
+          </div>
+          <div class="card__foot">
+            <span class="card__link">En savoir plus</span>
+          </div>
+          <div class="card__border"></div>
+        </a>
+      <% end %>
+    </div>
+
+    <a href="#" class="card">
+      <div class="card__head">
+        <div class="card__image"></div>
+        <div class="card__author">
+          <div class="author">
+            <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80" alt="Author of Tobias Reich" class="author__image">
+            <div class="author__content">
+              <p class="author__header">Application web </p>
+              <p class="author__subheader">Goodwill</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card__body">
+        <h2 class="card__headline">Application d'enrichissement de données APIs</h2>
+        <p class="card__text">L'entreprise Goodwill souhaitait'</p>
+      </div>
+      <div class="card__foot">
+        <span class="card__link">En savoir plus</span>
+      </div>
+      <div class="card__border"></div>
+    </a>
+  </div>
+</div>
+
 <!-- Realisations -->
+
+
 <div class="background-sombre" id="realisations">
   <div class="container">
     <h2>Mes réalisations</h2>
@@ -109,8 +170,7 @@
           <div class="card-desc">
             <p><span class="name-desc-category">Contexte : </span>L'entreprise Goodwill disposait d'un fichier de 13.000 noms d'entreprises et
               souhaitait obtenir l'ensemble des coordonnées des dirigeants</p>
-              <p><span class="name-desc-category">Résultats : </span>L'entreprise Goodwill disposait d'un fichier de 13.000 noms
-                d'entreprises et souhaitait obtenir l'ensemble des coordonnées des dirigeants</p>
+              <p><span class="name-desc-category">Résultats : </span>Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com</p>
           </div>
           <div class="technos-wrapper">
             <div class="techno">
@@ -258,7 +318,7 @@
           <%= f.input :company, as: :string, class:"input-type" %>
         </div>
         <%= f.input :message, as: :text, class:"input-type" %>
-        <%= f.button :submit, class: "primary-button"%>
+        <%= f.button :submit, class: "primary-button", value: "Valider ma demande"%>
       <% end %>
     </div>
     <div class="form-desc-container">

@@ -8,4 +8,21 @@
   transition: opacity 0.3s ease;
   text-decoration: none;
   background-color: $red;
+  box-shadow: 0 0 15px rgba(255, 255, 255, .5);
+}
+
+.primary-button:hover{
+  color: $red;
+  border: 1px solid $red;
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, .5);
+}
+
+a {
+  text-decoration: none;
 }

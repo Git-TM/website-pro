@@ -1,7 +1,31 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'json'
+
+file_project = "projects.json"
+
+puts "---- DeletingProjects----"
+Project.delete_all
+
+# Parse the JSON
+file = File.read(file_project)
+data_hash = JSON.parse(file)
+allkeys = data_hash.keys
+
+puts "---- Creating Projects----"
+allkeys.each do |key|
+  puts data_hash[key]
+  puts data_hash[key]['name']
+  new_project = Project.new(projectname: data_hash[key]['name'],
+                            context:data_hash[key]['context'],
+                            generaltags:data_hash[key]['name'],
+                            codetags:data_hash[key]['generaltags'],
+                            githublink:data_hash[key]['githublink'],
+                            weblink:data_hash[key]['weblink'],
+                            category:data_hash[key]['category'],
+                            projecttype:data_hash[key]['projecttype'],
+                            imgurl:data_hash[key]['imgurl'],
+                            logourl:data_hash[key]['logourl'],
+                            results:data_hash[key]['results'],
+                            features:data_hash[key]['features'])
+  new_project.save
+  puts "---- Project created ----"
+end

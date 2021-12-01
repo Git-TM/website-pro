@@ -2,11 +2,18 @@
 
 // For example:
 $red: #e63946;
-// $blue: #167FFB;
-$blue: white;
+$blue: #167FFB;
 $yellow: #FFC65A;
 $orange: #E67E22;
 $green: #1EDD88;
 $gray: #0E0000;
 $light-gray: black;
 $backblue: #1d3557;
+
+.backblue{
+  color: $backblue;
+}
+
+.white{
+  color:white;
+}
