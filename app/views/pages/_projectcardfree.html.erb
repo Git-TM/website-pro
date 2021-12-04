@@ -1,0 +1,29 @@
+
+<%= link_to project_path(project),  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window-<%=project.id%>', class: 'card'} do %>
+
+  <%# <a href="#" class="card"> %>
+    <div class="card__head">
+      <div class="card__image">
+        <%= image_tag project.imgurl, { :class=>"ui-button-text button_text" } %>
+      </div>
+      <div class="card__author">
+        <div class="author">
+          <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80" alt="Author of Tobias Reich" class="author__image">
+          <div class="author__content">
+            <p class="author__header"> <%= project.projectname %></p>
+            <p class="author__subheader">Goodwill</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card__body">
+      <h3 class="card__headline"><%= project.projectname %></h3>
+      <p class="card__text"><%= project.context %></p>
+    </div>
+    <div class="card__foot">
+      <span class="card__link">En savoir plus</span>
+    </div>
+    <div class="card__border"></div>
+
+
+<% end %>

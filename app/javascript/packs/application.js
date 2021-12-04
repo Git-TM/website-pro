@@ -25,9 +25,20 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+  // $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+  //   currTabTarget = $(e.target).attr('href');
+  //   let remoteUrl = $(this).attr('data-tab-remote')
+  //   if (remoteUrl !== '') {
+  //     $(currTabTarget).load(remoteUrl)
+  //   }
+  // })
 });
+
+
+
+
+
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -96,3 +107,5 @@ document.querySelectorAll('.card').forEach((elem) => {
   }
 
 })
+
+import "controllers"

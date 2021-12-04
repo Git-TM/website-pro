@@ -1,8 +1,9 @@
 class PagesController < ApplicationController
   def home
     @contact = Contact.new
-    @growthprojects = Project.where(projecttype: "Growth / Freelance")
-    @personalprojects = Project.where(projecttype: "Personal Project")
-    @freelancecodeprojects = Project.where(projecttype: "Freelance code")
+    @growthprojects = Project.where(category: "Growth / Freelance")
+    @personalprojects = Project.where(category: "Projets personnels")
+    @freelancecodeprojects = Project.where(category: "Freelance Web Dev")
+    @projectall = Project.all
   end
 end

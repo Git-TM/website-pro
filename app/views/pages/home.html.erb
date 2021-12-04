@@ -92,215 +92,45 @@
 
 <div class="background-sombre" id="realisations">
   <div class="container">
-    <h2 class="white">Mes réalisations</h2>
-    <div class="cards-real">
-      <% Project.all. each do |project| %>
-        <a href="#" class="card">
-          <div class="card__head">
-            <%# <div class="card__image"></div> %>
-            <img src="<%= project.imgurl %>" alt="" class="card__image" height="300px">
-            <%= image_tag "admin/filename.jpg", class"" %>
-            <div class="card__author">
-              <div class="author">
-                <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80" alt="Author of Tobias Reich" class="author__image">
-                <div class="author__content">
-                  <p class="author__header"> <%= project.projectname %></p>
-                  <p class="author__subheader">Goodwill</p>
-                </div>
-              </div>
-            </div>
+    <h2 class="white mb-5">Mes réalisations</h2>
+    <div class="real-contain" data-controller="tabdisplay">
+      <ul class="nav nav-tabs project-tab" style="border-right:solid" id="tabs">
+        <li class="project-tab-list"><a href="#tab1" class="tab-link" data-toggle="tab" data-action="click->tabdisplay#change" >Projets personnels</a></li>
+        <li class="project-tab-list"><a href="#tab2" class="tab-link" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Growth / Technique</a></li>
+        <li class="project-tab-list"><a href="#tab3" class="tab-link" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Code </a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="cards-real">
+          <div class="tab-pane active show cards-real tab1" id="tab1" data-tabdisplay-target="tabproject">
+            <% @personalprojects.each do |project| %>
+              <%= render 'pages/projectcardfree', project: project %>
+              <%= render 'projects/show', project: project%>
+            <% end %>
           </div>
-          <div class="card__body">
-            <h2 class="card__headline"><%= project.projectname %></h2>
-            <p class="card__text"><%= project.context %></p>
+          <div class="tab-pane d-none cards-real tab2" id="tab2" data-tabdisplay-target="tabproject">
+            <% @growthprojects.each do |project| %>
+              <%= render 'pages/projectcardfree', project: project%>
+            <% end %>
           </div>
-          <div class="card__foot">
-            <span class="card__link">En savoir plus</span>
-          </div>
-          <div class="card__border"></div>
-        </a>
-      <% end %>
-    </div>
-
-    <a href="#" class="card">
-      <div class="card__head">
-        <div class="card__image"></div>
-        <div class="card__author">
-          <div class="author">
-            <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80" alt="Author of Tobias Reich" class="author__image">
-            <div class="author__content">
-              <p class="author__header">Application web </p>
-              <p class="author__subheader">Goodwill</p>
-            </div>
+          <div class="tab-pane d-none cards-real tab3" id="tab3" data-tabdisplay-target="tabproject">
+            <% @freelancecodeprojects.each do |project| %>
+              <%= render 'pages/projectcardfree', project: project%>
+            <% end %>
           </div>
         </div>
       </div>
-      <div class="card__body">
-        <h2 class="card__headline">Application d'enrichissement de données APIs</h2>
-        <p class="card__text">L'entreprise Goodwill souhaitait'</p>
-      </div>
-      <div class="card__foot">
-        <span class="card__link">En savoir plus</span>
-      </div>
-      <div class="card__border"></div>
-    </a>
+    </div>
   </div>
 </div>
 
 <!-- Realisations -->
-
-
-<div class="background-sombre" id="realisations">
-  <div class="container">
-    <h2>Mes réalisations</h2>
-    <div class="cards-mission">
-      <div class="container-realisation">
-        <div class="card-mission">
-          <div class="background-mission mission1">
-          </div>
-          <img src=<%= image_path("logokaioit.jpg")%> class="logo-company" />
-          <div class="mission-spans">
-            <span class="mission-span">Growth Hacking</span>
-            <span class="mission-span">Enrichissement de données</span>
-          </div>
-          <h3 class="mission-title">Applications d'enrichissement de données</h3>
-        </div>
-        <div class="realisation-desc">
-          <h3 class="mission-title-desc">Freelance <span class="separator">//</span> Goodwill</h3>
-          <div class="card-desc">
-            <p><span class="name-desc-category">Contexte : </span>L'entreprise Goodwill disposait d'un fichier de 13.000 noms d'entreprises et
-              souhaitait obtenir l'ensemble des coordonnées des dirigeants</p>
-              <p><span class="name-desc-category">Résultats : </span>Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com</p>
-          </div>
-          <div class="technos-wrapper">
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">Ruby On Rails</span>
-            </div>
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">Sidekiq</span>
-            </div>
-          </div>
-          <div class="project-web-links">
-            <a class ="project-web-link" href="https://github.com/AxelBurtz/SwipArt"><i class="fab fa-github project-icon-git"></i> Code source </a>
-            <%# <a class ="project-web-link" href="https://github.com/Git-TM"><i class="fas fa-desktop project-icon-git"></i> Version Web </a> %>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container-realisation">
-        <div class="realisation-desc">
-          <h3 class="mission-title-desc">Freelance <span class="separator">//</span> Site personnel</h3>
-          <div class="card-desc">
-            <p><span class="name-desc-category">Contexte : </span>Pour tester mes compétences en développement web, et avoir un site vitrine pour mon activité freelance, j'ai réalisé ce projet en 1 semaine et demi. </p>
-              <p><span class="name-desc-category">Résultats : </span>Un site vitrine à présenter à mes clients.
-                d'entreprises et souhaitait obtenir l'ensemble des coordonnées des dirigeants</p>
-          </div>
-          <div class="technos-wrapper">
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">Ruby On Rails</span>
-            </div>
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">HTML / CSS / JavaScript</span>
-            </div>
-          </div>
-          <div class="project-web-links">
-            <a class ="project-web-link" href="https://github.com/Git-TM/My-Website"><i class="fab fa-github project-icon-git"></i> Code source </a>
-            <a class ="project-web-link" href="http://www.tristanmonteiro.com"><i class="fas fa-desktop project-icon-git"></i> Version Web </a>
-          </div>
-        </div>
-           <div class="card-mission">
-          <div class="background-mission mission2">
-          </div>
-          <div class="mission-spans">
-            <span class="mission-span">Site web</span>
-            <span class="mission-span">Formulaire</span>
-          </div>
-            <h3 class="mission-title">Site vitrine personnel</h3>
-
-        </div>
-      </div>
       <div id="clouds">
         <div class="cloud x1"></div>
         <div class="cloud x2"></div>
         <div class="cloud x3"></div>
         <div class="cloud x4"></div>
         <div class="cloud x5"></div>
-      </div>
-      <div class="container-realisation">
-        <div class="card-mission">
-          <div class="background-mission mission3">
-          </div>
-          <div class="mission-spans">
-            <span class="mission-span">Application web</span>
-            <span class="mission-span">Video</span>
-          </div>
-            <h3 class="mission-title">Application web Skate Paris</h3>
-        </div>
-        <div class="realisation-desc">
-          <h3 class="mission-title-desc">Freelance <span class="separator">//</span> Personnel</h3>
-          <div class="card-desc">
-            <p><span class="name-desc-category">Contexte : </span>Adorant ce sport depuis petit, l'idée m'est venu de développer une applications
-            qui permet aux skateurs parisiens de découvrir des endroits où skater et de poster leurs vidéos à chaque endroit. Je réalise ce projet avec un ami skateur rencontré au wagon</p>
-              <p><span class="name-desc-category">Résultats : </span>L'application est encore en cours de développement. Le travail en cours est notamment autour du design, de la notion de communauté,
-              et de lecteur performant de vidéos.</p>
-          </div>
-          <div class="technos-wrapper">
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">Ruby On Rails</span>
-            </div>
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">Mapbox</span>
-            </div>
-          </div>
-          <div class="project-web-links">
-            <a class ="project-web-link" href="https://github.com/Git-TM/skate-application"><i class="fab fa-github project-icon-git"></i> Code source </a>
-            <%# <a class ="project-web-link" href="https://github.com/Git-TM"><i class="fas fa-desktop project-icon-git"></i> Version Web </a> %>
-          </div>
-        </div>
-      </div>
-      <div class="container-realisation">
-        <div class="realisation-desc">
-          <h3 class="mission-title-desc">Projet du Wagon <span class="separator">//</span> Application d'art</h3>
-          <div class="card-desc">
-            <p><span class="name-desc-category">Contexte : </span>Pour le projet de fin de batch au Wagon, notre équipe de 3 a décidé de développer une application Rails qui permet de reçevoir des
-            recommandations personnalisées en fonction du Swipe ou non des oeuvres d'arts proposées. Les expositions étaient affinées en fonction de 4 critères.</p>
-              <p><span class="name-desc-category">Résultats : </span>Notre site est fonctionnelle, et permet de recevoir des recommandations sur Paris des expositions</p>
-          </div>
-          <div class="technos-wrapper">
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">Ruby On Rails</span>
-            </div>
-            <div class="techno">
-              <img src=<%= image_path("rails.png")%> alt="" class="techno-photo">
-              <span class="techno-desc">HTML / CSS / JavaScript</span>
-            </div>
-          </div>
-          <div class="project-web-links">
-            <a class ="project-web-link" href="https://github.com/AxelBurtz/SwipArt"><i class="fab fa-github project-icon-git"></i> Code source </a>
-            <%# <a class ="project-web-link" href="https://github.com/Git-TM"><i class="fas fa-desktop project-icon-git"></i> Version Web </a> %>
-          </div>
-        </div>
-           <div class="card-mission">
-          <div class="background-mission mission2">
-          </div>
-          <div class="mission-spans">
-            <span class="mission-span">Site web</span>
-            <span class="mission-span">Formulaire</span>
-          </div>
-          <h3 class="mission-title">Site vitrine personnel</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!-- Travail pour  -->
 <!-- Mes services -->
 
