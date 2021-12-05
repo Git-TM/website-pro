@@ -12,12 +12,10 @@ allkeys = data_hash.keys
 
 puts "---- Creating Projects----"
 allkeys.each do |key|
-  puts data_hash[key]
-  puts data_hash[key]['name']
   new_project = Project.new(projectname: data_hash[key]['name'],
                             context:data_hash[key]['context'],
                             generaltags:data_hash[key]['name'],
-                            codetags:data_hash[key]['generaltags'],
+                            codetags:data_hash[key]['codetags'],
                             githublink:data_hash[key]['githublink'],
                             weblink:data_hash[key]['weblink'],
                             category:data_hash[key]['category'],

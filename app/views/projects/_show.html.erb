@@ -1,10 +1,33 @@
 
-  <div id="modal-window-<%=project.id%>" class="modal" role="dialog" aria-labelledby="show" aria-hidden="true">
-    <div class="modal-dialog form-test" role="document">
-      <div class="modal-content">
-        <h2><%= project.projectname %></h2>
-        <%= project.category %>
-        <%= project.context %>
+<div id="modal-window-<%=project.id%>" class="modal" role="dialog" aria-labelledby="show" aria-hidden="true">
+  <div class="modal-content" role="document">
+    <div class="modal-title text-center mb-5">
+      <%= submit_tag 'X', :type => :reset, :class => "close-modal", "data-dismiss" => "modal", "aria-hidden" => "true" %>
+      <h2><%= project.projecttype %></h2>
+      <span><%= project.context %></span>
+    </div>
+    <div class="modal-photo">
+    </div>
+    <div class="modal-desc">
+      <div class="modal-desc-left modal-bloc-style mx-3">
+        <h2 class="text-left"> Description</h2>
+        <p><%= project.context %></p>
+        <ul>
+        <% project.features.split(',').map(&:strip).each do |feature| %>
+        <li><%= feature %></li>
+        <% end %>
+        </ul>
+      </div>
+        <div class="modal-desc-right modal-bloc-style my-3">
+        <h2> General tags </h2>
+        <div class="technos-wrapper">
+        <% project.codetags.split(',').map(&:strip).each do |tag| %>
+          <div class="techno">
+            <span class="techno-desc"><%= tag %></span>
+          </div>
+        <% end %>
+        </div>
       </div>
     </div>
   </div>
+</div>

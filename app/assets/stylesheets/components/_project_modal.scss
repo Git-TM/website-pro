@@ -1,0 +1,62 @@
+
+
+.modal-content{
+  padding: 30px;
+  border-radius: 30px;
+  background-color:white;
+  width: 80%;
+  margin: 1.75em auto;
+}
+
+.modal-desc{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-desc-right{
+  width: 70%;
+}
+
+.modal-desc-left{
+  width: 100%;
+}
+
+.close-modal{
+  background-color: transparent;
+  border-style: none;
+  color: $red;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+
+}
+
+.modal-bloc-style{
+  border-radius: 20px;
+  background-color: $backblue;
+  color: white;
+  padding: 20px;
+}
+
+.technos-wrapper{
+  margin: 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.techno {
+  background-color: $red;
+  display:flex;
+  align-items: center;
+  box-shadow: 0 0 15px $red;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+.techno-desc{
+  color:white;
+  font-size: 12px;
+}

@@ -11,14 +11,14 @@
     "imgurl": "back-csv.png",
     "logourl": "logo-kaioit.jpeg",
     "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
-    "features": "Mise en place d'une application Rails, Ajout de Sidekiq"
+    "features": "Mise en place d'une application Rails, Intégration des contacts existants en BDD, Intégration de Sidekiq, Enrichissement automatisé via 3 appels APIs, Validation des données"
   },
 
   "project2": {
-    "name": "Application pour le skate",
+    "name": "Application pour skateurs",
     "context": "Développement d'une application web à destination des skateurs parisiens",
     "weblink": "",
-    "githublink": "back-csv.png",
+    "githublink": "maps-mission.png",
     "generaltags": "Growth Hacking, Enrichissement de données",
     "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
     "description": "",
@@ -33,33 +33,33 @@
   ,
   "project3": {
     "name": "Site Web personnel",
-    "context": "J'ai réalisé ce site pour mon activité de freelance. Portfolio, compétences etc..",
+    "context": "Site web Portfolio pour référencer mon travail freelance",
     "weblink": "",
     "githublink": "photo-site.png",
     "generaltags": "Growth Hacking, Enrichissement de données",
-    "codetags": "Ruby On Rails, Datepickr, Stimulus JS",
+    "codetags": "Ruby On Rails, Datepickr, Stimulus JS, CSS",
     "description": "",
     "category": "Projets personnels",
     "projecttype": "Site web",
     "imgurl": "photo-site.png",
     "logourl": "",
     "results": "Un site tout beau tout neuf",
-    "features": "Intégration de Datepickr, Activeview email "
+    "features": "Intégration de Datepickr, Activeview email, Ajouts d'effets CSS, Projets générés depuis un fichier JSON"
   },
 
   "project4": {
     "name": "Application de tracking",
-    "context": "Je souhaitais mesurer mes dépenses ",
+    "context": "Gestion du suivi temps et des finances personnels",
     "weblink": "",
     "githublink": "photo-site.png",
-    "generaltags": "Growth Hacking, Enrichissement de données",
-    "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
+    "generaltags": "Application Web, Enrichissement de données",
+    "codetags": "Ruby On Rails, Chartkick.js, Intégration d'APIs, Stimulus.js",
     "description": "",
     "category": "Projets personnels",
     "projecttype": "Application web",
     "imgurl": "back-csv.png",
-    "logourl": "logo-kaioit.jpeg",
+    "logourl": "",
     "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
-    "features": "Mise en place d'une application Rails, Ajout de Sidekiq"
+    "features": "Mise en place de vue type Dashboard, Création des vues dates (Granularité semaine & mois), Intégration de chartkick.js, Définition d'objectifs : temps / finance, Création d'une API ouverte, Automatisation des flux de données "
   }
 }

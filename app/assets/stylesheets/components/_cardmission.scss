@@ -82,15 +82,15 @@
   text-align:center;
 }
 
-.logo-company {
-  position: absolute;
-  right: 16px;
-  top: 10px;
-  height: 60px;
-  border: 1px solid rgba(0,0,0,.1);
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
+// .logo-company {
+//   position: absolute;
+//   right: 16px;
+//   top: 10px;
+//   height: 60px;
+//   border: 1px solid rgba(0,0,0,.1);
+//   border-radius: 10px;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+// }
 
 .mission-span {
   background-color: $red;
@@ -147,28 +147,7 @@
   color:$red;
 }
 
-.technos-wrapper{
-  margin: 15px 0px;
-  display:flex;
-}
-
-.techno {
-  display:flex;
-  align-items: center;
-  box-shadow: 0 0 15px $red;
-  width: fit-content;
-  border-radius: 20px;
-  padding: 0px 10px;
-  margin: 0px 10px;
-}
-.techno-photo{
-  width:30px;
-  height:30px;
-  // filter: gray;
-  // -webkit-filter: grayscale(.7);
-}
-
 .techno-desc{
-  color:darkgray;
+  color:white;
   font-size: 12px;
 }

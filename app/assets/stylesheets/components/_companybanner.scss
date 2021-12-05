@@ -1,0 +1,13 @@
+.company-logo-div{
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo-company {
+  height:70px;
+  // filter: gray;
+  // -webkit-filter: grayscale(.1);
+  object-fit: contain;
+  padding: 0px 15px;
+}
