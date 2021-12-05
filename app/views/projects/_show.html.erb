@@ -6,7 +6,9 @@
       <h2><%= project.projecttype %></h2>
       <span><%= project.context %></span>
     </div>
-    <div class="modal-photo">
+    <div class="modal-photos-div d-flex justify-content-center mb-5">
+      <img src=<%= image_path("mokup-tracking.jpeg")%> class="photo-modal" />
+      <img src=<%= image_path("mokup-website.jpeg")%> class="photo-modal" />
     </div>
     <div class="modal-desc">
       <div class="modal-desc-left modal-bloc-style mx-3">
@@ -18,7 +20,7 @@
         <% end %>
         </ul>
       </div>
-        <div class="modal-desc-right modal-bloc-style my-3">
+        <div class="modal-desc-right modal-bloc-style mx-3">
         <h2> General tags </h2>
         <div class="technos-wrapper">
         <% project.codetags.split(',').map(&:strip).each do |tag| %>

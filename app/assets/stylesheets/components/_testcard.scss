@@ -7,10 +7,23 @@
 }
 
 .project-tab-list{
-  padding: 10px 30px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+  margin-bottom: 10px;
+}
+
+.tab-link{
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  font-size: 18px;
+}
+.tab-link:hover{
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+
+.selectedtab{
+  border-bottom: solid 1px white;
 }
 
 .nav-tabs {
@@ -19,9 +32,9 @@
 }
 
 .cards-real{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  // white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
 }
 

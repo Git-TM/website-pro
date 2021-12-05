@@ -1,7 +1,7 @@
 import { Controller } from "stimulus";
 
 export default class extends Controller {
-  static targets = ['tabproject'];
+  static targets = ['tabproject', 'texttab'];
 
   connect() {
     // console.log("yo")
@@ -9,6 +9,13 @@ export default class extends Controller {
   }
 
   change(){
+    let selected = event.currentTarget.getAttribute("href");
+    event.currentTarget.classList.add("selectedtab")
+    this.texttabTargets.forEach(element => {
+      if (element.getAttribute("href") !== selected) {
+        element.classList.remove("selectedtab");
+      }
+    });
     setTimeout(() => {
       this.tabprojectTargets.forEach(element => {
         if (element.classList.contains("active")) {
