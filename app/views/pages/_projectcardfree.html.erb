@@ -1,5 +1,5 @@
 
-<%= link_to project_path(project),  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => "#modal-window-#{project.id}", class: 'card'} do %>
+<%= link_to project_path(project),  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => "#modal-window-#{project.id}", class: 'card pulse'} do %>
   <div class="card__head">
     <div class="card__image">
       <%= image_tag project.imgurl, { :class=>"ui-button-text button_text" } %>

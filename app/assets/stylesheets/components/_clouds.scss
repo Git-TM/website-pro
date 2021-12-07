@@ -1,52 +1,5 @@
 
 
-/*Lets start with the cloud formation rather*/
-.skill-card{
-  width: 80%;
-  height: 100px;
-  margin: 0 auto;
-  border-radius: 30px;
-  justify-content: space-evenly;
-  align-items: center;
-  display:flex;
-}
-
-.skills-wrapper{
-  margin: 20px 0px;
-  display: inline-block;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.skill {
-  display:flex;
-  align-items: center;
-  box-shadow: 0 0 15px rgba(120, 20, 40, .35);
-  width: 100%;
-  border-radius: 20px;
-  padding: 0px 5px;
-  margin: 15px auto;
-  transition: opacity 0.3s ease-in-out;
-}
-.skill:hover {
-  box-shadow: 0 0 15px rgba(120, 20, 40, 1);
-  background-color: rgba(120, 20, 40, .6);
-  color: white;
-}
-
-.skill-photo{
-  width:70px;
-  height:70px;
-  // filter: gray;
-  // -webkit-filter: grayscale(.7);
-  object-fit: contain;
-  padding: 10px;
-}
-
-.skill-desc{
-  font-size: 14px;
-}
-
 #clouds{
 	padding: 20px 0 0 0;
   height: 100px;

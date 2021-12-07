@@ -1,16 +1,14 @@
 .form-container{
   display: flex;
-  justify-content: space-between;
-  box-shadow: 0 0 15px rgba(255,255,255,0.8);
-  // box-shadow: 0 0 15px rgba(0, 20, 40, .7);
-  // box-shadow: 0 0 15px #FFF;
-  border-radius: 20px;
-  padding: 20px 30px;
+  justify-content: center;
   margin: 30px auto;
   background-color: white
 }
 
 .form-contact{
+  box-shadow: 0 0 15px rgba(0, 20, 40, .7);
+  border-radius: 20px;
+  padding: 20px 30px;
   width: 60%;
   text-align: center;
   color: black;
@@ -23,11 +21,11 @@
   align-items: center;
 }
 
-.form-check-inlin{
-  display:flex;
-  justify-content: space-between;
-}
+// .form-check-inlin{
+//   display:flex;
+//   justify-content: space-between;
+// }
 
-.input-type{
-  width: 45%;
+.form-control{
+  border-radius: 20px;
 }

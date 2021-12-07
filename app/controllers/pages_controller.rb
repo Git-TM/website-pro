@@ -6,4 +6,5 @@ class PagesController < ApplicationController
     @freelancecodeprojects = Project.where(category: "Freelance Web Dev")
     @projectall = Project.all
   end
+
 end

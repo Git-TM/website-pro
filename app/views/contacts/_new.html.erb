@@ -1,0 +1,12 @@
+<%= simple_form_for (@contact) do |f| %>
+  <div class="form-check-inlin">
+    <%= f.input :firstname, as: :string, class:"input-type" %>
+    <%= f.input :name, as: :string, class:"input-type" %>
+  </div>
+  <div class="form-check-inlin">
+    <%= f.input :email, as: :string, class:"input-type" %>
+    <%= f.input :company, as: :string, class:"input-type" %>
+  </div>
+  <%= f.input :message, as: :text, class:"input-type" %>
+  <%= f.button :submit, class: "primary-button", value: "Valider ma demande"%>
+<% end %>

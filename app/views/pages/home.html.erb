@@ -8,6 +8,7 @@
     <a href="#contact" class="nav-category">Contactez-moi !</a>
   </div>
 </div>
+
 <!-- 222 Banner -->
 <div class="banner">
   <div class="banner-text">
@@ -17,6 +18,7 @@
   </div>
   <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="banner-photo">
 </div>
+
 <!-- 333 A propos de moi -->
 <div class="container" id="apropos">
   <div class="bloc-apropos">
@@ -31,66 +33,79 @@
     </div>
   </div>
 </div>
-  <!-- 444 technologies utilisées -->
-<div class="container" id="skills">
-  <h2 class="mb-5">Mes compétences en développement Web</h2>
-  <div class="container-skill">
-    <div class="blocs-service">
-      <div class="bloc-service">
-        <img src=<%= image_path("frontend.svg")%> alt="frontend" class="skill-desc-photo">
-        <div class="bloc-service-title">
-          <h3 class="titleblack">Front-end</h3>
-        </div>
-        <div class="skills-wrapper">
-          <div class="skill pulse">
-            <img src=<%= image_path("html-css.png")%> alt="" class="skill-photo">
-            <span class="skill-desc">HTML / CSS</span>
+
+<%# Mes technologies %>
+<div class="technologie-div  section-logo">
+  <h2 class="pb-2">Mes technologies</h2>
+  <div class="skills-wrapper py-2">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="logo-tech skill" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="logo-tech skill" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" class="logo-tech skill" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" class="logo-tech skill"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" class="logo-tech skill" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" class="logo-tech skill" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" class="logo-tech skill" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" class="logo-tech skill" />
+  </div>
+</div>
+
+
+<div class="background-sombre" id="realisations">
+  <%# Services proposées %>
+  <div class="container" id="service">
+    <h2 class="mb-5">Mes services</h2>
+    <div class="container-skill">
+      <div class="blocs-service">
+        <div class="bloc-service">
+          <img src=<%= image_path("frontend.svg")%> alt="frontend" class="skill-desc-photo">
+          <div class="bloc-service-title">
+            <h3 class="titleblack">Front-end</h3>
           </div>
-          <div class="skill pulse">
-            <img src=<%= image_path("javascript.png")%> alt="" class="skill-photo">
-            <span class="skill-desc">Javascript</span>
-          </div>
-        </div>
-      </div>
-      <div class="bloc-service">
-      <img src=<%= image_path("backend.svg")%> alt="frontend" class="skill-desc-photo">
-        <div class="bloc-service-title">
-          <h3 class="title-black">Back-end</h3>
-        </div>
-        <div class="skills-wrapper">
-          <div class="skill pulse">
-            <img src=<%= image_path("rails.png")%> alt="" class="skill-photo">
-            <span class="skill-desc">Ruby (Rails)</span>
-          </div>
-          <div class="skill pulse">
-            <img src=<%= image_path("api.png")%> alt="" class="skill-photo">
-            <span class="skill-desc">API</span>
-          </div>
-          <div class="skill pulse">
-            <img src=<%= image_path("postgre.png")%> alt="" class="skill-photo">
-            <span class="skill-desc">PostgreSQL</span>
+          <div class="skills-wrapper">
+            <ul class="fa-ul">
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="bloc-service">
-        <img src=<%= image_path("deploy.svg")%> alt="frontend" class="skill-desc-photo">
-        <div class="bloc-service-title">
-          <h3 class="titleblack">Production</h3>
+        <div class="bloc-service">
+        <img src=<%= image_path("backend.svg")%> alt="frontend" class="skill-desc-photo">
+          <div class="bloc-service-title">
+            <h3 class="title-black">Back-end</h3>
+          </div>
+          <div class="skills-wrapper">
+            <ul class="fa-ul">
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+            </ul>
+          </div>
         </div>
-        <div class="skills-wrapper">
-          <div class="skill pulse">
-            <img src=<%= image_path("heroku.png")%> alt="" class="skill-photo">
-            <span class="skill-desc">Heroku</span>
+        <div class="bloc-service">
+          <img src=<%= image_path("deploy.svg")%> alt="frontend" class="skill-desc-photo">
+          <div class="bloc-service-title">
+            <h3 class="titleblack">Production</h3>
+          </div>
+          <div class="skills-wrapper">
+             <ul class="fa-ul">
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+              <li class="py-3"><span class="fa-li"><i class="fas fa-check green"></i></span>Mise en place du design front-end à partir de vos maquettes</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<%# Réalisations itérations %>
-
-<div class="background-sombre" id="realisations">
+  <div id="clouds">
+    <div class="cloud x1"></div>
+    <div class="cloud x2"></div>
+    <div class="cloud x3"></div>
+    <div class="cloud x4"></div>
+    <div class="cloud x5"></div>
+  </div>
+  <%# Réalisations  %>
   <div class="container">
     <h2 class="white mb-5">Mes réalisations</h2>
     <div class="real-contain" data-controller="tabdisplay">
@@ -121,50 +136,59 @@
       </div>
     </div>
   </div>
-  <div id="clouds">
-    <div class="cloud x1"></div>
-    <div class="cloud x2"></div>
-    <div class="cloud x3"></div>
-    <div class="cloud x4"></div>
-    <div class="cloud x5"></div>
-  </div>
-  <div class="section-logo">
-    <h2 class="white mb-5">Ils me font confiance</h2>
-    <div class="company-logo-div">
-      <img src=<%= image_path("logo-mediapp.png")%> class="logo-company" />
-      <img src=<%= image_path("logo-cartelis.png")%> class="logo-company" />
-      <img src=<%= image_path("logo-goodwill.png")%> class="logo-company" />
-      <img src=<%= image_path("logo-bien-fonde.png")%> class="logo-company" />
-      <img src=<%= image_path("logo-mister-auto.png")%> class="logo-company" />
-    </div>
-  </div>
-  <div class="avis-clients w-30">
-  </div>
+</div>
 
 
-  <div class="container" id="contact">
-    <h2 class="white">Contactez moi</h2>
-    <div class="form-container">
-      <div class="form-contact">
-        <%= simple_form_for(@contact) do |f| %>
-          <div class="form-check-inlin">
-            <%= f.input :firstname, as: :string, class:"input-type" %>
-            <%= f.input :name, as: :string, class:"input-type" %>
-          </div>
-          <div class="form-check-inlin">
-            <%= f.input :email, as: :string, class:"input-type" %>
-            <%= f.input :company, as: :string, class:"input-type" %>
-          </div>
-          <%= f.input :message, as: :text, class:"input-type" %>
-          <%= f.button :submit, class: "primary-button", value: "Valider ma demande"%>
-        <% end %>
-      </div>
-      <div class="form-desc-container">
-      <img src=<%= image_path("frontend.svg")%> alt="frontend" class="skill-desc-photo">
-      </div>
-    </div>
+<%# Banner logo confiance %>
+<div class="section-logo">
+  <h2 class="white mb-5">Ils me font confiance</h2>
+  <div class="company-logo-div">
+    <img src=<%= image_path("logo-mediapp.png")%> class="logo-company" />
+    <img src=<%= image_path("logo-cartelis.png")%> class="logo-company" />
+    <img src=<%= image_path("logo-goodwill.png")%> class="logo-company" />
+    <img src=<%= image_path("logo-bien-fonde.png")%> class="logo-company" />
+    <img src=<%= image_path("logo-mister-auto.png")%> class="logo-company" />
   </div>
 </div>
+
+<%# Formulaire de contact%>
+<div id="contact">
+  <h2 class="backblue py-3">Contactez moi</h2>
+  <div class="form-container">
+    <div class="form-contact">
+    <%= simple_form_for (@contact) do |f| %>
+      <div class="form-row">
+        <div class="col">
+          <%= f.input :firstname, as: :string, class:"form-control input-type" %>
+        </div>
+        <div class="col">
+          <%= f.input :name, as: :string, class:"form-control  input-type" %>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <%= f.input :email, as: :string, class:"form-control  input-type" %>
+        </div>
+        <div class="col">
+          <%= f.input :company, as: :string, class:"form-control  input-type" %>
+        </div>
+      </div>
+      <%= f.input :message, as: :text, class:"input-type  input-type" %>
+      <%= f.button :submit, class: "primary-button", value: "Valider ma demande"%>
+    <% end %>
+
+  </div>
+</div>
+
+<div id="review">
+
+</div>
+
+    <div class="form-desc-container">
+    <img src=<%= image_path("frontend.svg")%> alt="frontend" class="skill-desc-photo">
+    </div>
+
+<%# Footer %>
 <div class="footer">
   <div class="footer-links">
     <a href="https://github.com/Git-TM"><i class="fab fa-github"></i></a>
