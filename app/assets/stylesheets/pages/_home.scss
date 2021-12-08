@@ -34,9 +34,10 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Yaldevi', sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 
 p {
@@ -54,4 +55,15 @@ span {
 
 .title-sombre{
   color:$backblue;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(315deg, #fff 0%, #f53844 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bold{
+  font-weight: bold;
+  font-size: 25px;
 }

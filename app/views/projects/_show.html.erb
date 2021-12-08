@@ -1,9 +1,9 @@
 
 <div id="modal-window-<%=project.id%>" class="modal" role="dialog" aria-labelledby="show" aria-hidden="true">
   <div class="modal-content" role="document">
-    <div class="modal-title text-center mb-5">
+    <div class="modal-title text-center mb-1">
       <%= submit_tag 'X', :type => :reset, :class => "close-modal", "data-dismiss" => "modal", "aria-hidden" => "true" %>
-      <h2><%= project.projecttype %></h2>
+      <h2 class="gradient-text"><%= project.projecttype %></h2>
       <span><%= project.context %></span>
     </div>
     <div class="modal-photos-div d-flex justify-content-center mb-5">

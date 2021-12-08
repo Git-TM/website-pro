@@ -35,9 +35,9 @@
 </div>
 
 <%# Mes technologies %>
-<div class="technologie-div  section-logo">
-  <h2 class="pb-2">Mes technologies</h2>
-  <div class="skills-wrapper py-2">
+<div class="technologie-div">
+  <h2 class="pb-4 backblue">Mes technologies</h2>
+  <div class="technos-wrapper py-2">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="logo-tech skill" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="logo-tech skill" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" class="logo-tech skill" />
@@ -50,6 +50,7 @@
 </div>
 
 
+
 <div class="background-sombre" id="realisations">
   <%# Services proposées %>
   <div class="container" id="service">
@@ -59,7 +60,7 @@
         <div class="bloc-service">
           <img src=<%= image_path("frontend.svg")%> alt="frontend" class="skill-desc-photo">
           <div class="bloc-service-title">
-            <h3 class="titleblack">Front-end</h3>
+            <h3 class="titleblack gradient-text py-2">Front-end</h3>
           </div>
           <div class="skills-wrapper">
             <ul class="fa-ul">
@@ -72,7 +73,7 @@
         <div class="bloc-service">
         <img src=<%= image_path("backend.svg")%> alt="frontend" class="skill-desc-photo">
           <div class="bloc-service-title">
-            <h3 class="title-black">Back-end</h3>
+            <h3 class="title-black gradient-text py-2">Back-end</h3>
           </div>
           <div class="skills-wrapper">
             <ul class="fa-ul">
@@ -85,7 +86,7 @@
         <div class="bloc-service">
           <img src=<%= image_path("deploy.svg")%> alt="frontend" class="skill-desc-photo">
           <div class="bloc-service-title">
-            <h3 class="titleblack">Production</h3>
+            <h3 class="titleblack gradient-text py-2">Production</h3>
           </div>
           <div class="skills-wrapper">
              <ul class="fa-ul">
@@ -105,14 +106,27 @@
     <div class="cloud x4"></div>
     <div class="cloud x5"></div>
   </div>
+<div class="section-logo">
+  <h2 class="white pb-5">Ils me font confiance</h2>
+  <div class="slider">
+    <div class="slide-track">
+      <div class="slide"><img src=<%= image_path("logo-mediapp.png")%> class="logo-company" /></div>
+      <div class="slide"><img src=<%= image_path("logo-cartelis.png")%> class="logo-company" /></div>
+      <div class="slide"><img src=<%= image_path("logo-goodwill.png")%> class="logo-company" /></div>
+      <div class="slide"><img src=<%= image_path("logo-bien-fonde.png")%> class="logo-company" /></div>
+      <div class="slide"><img src=<%= image_path("logo-mister-auto.png")%> class="logo-company" /></div>
+    </div>
+  </div>
+</div>
+
   <%# Réalisations  %>
   <div class="container">
     <h2 class="white mb-5">Mes réalisations</h2>
     <div class="real-contain" data-controller="tabdisplay">
       <ul class="nav nav-tabs project-tab" style="border-right:solid" id="tabs">
-        <li class="project-tab-list"><a href="#tab1" class="tab-link" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Projets personnels</a></li>
-        <li class="project-tab-list"><a href="#tab2" class="tab-link" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Growth / Technique</a></li>
-        <li class="project-tab-list"><a href="#tab3" class="tab-link" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Code </a></li>
+        <li class="project-tab-list"><a href="#tab1" class="tab-link gradient-text bold  pb-1 selectedtab" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Projets personnels</a></li>
+        <li class="project-tab-list"><a href="#tab2" class="tab-link gradient-text bold pb-1" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Growth / Technique</a></li>
+        <li class="project-tab-list"><a href="#tab3" class="tab-link gradient-text bold pb-1" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Code </a></li>
       </ul>
       <div class="tab-content">
         <div class="cards-real">
@@ -138,18 +152,35 @@
   </div>
 </div>
 
-
-<%# Banner logo confiance %>
-<div class="section-logo">
-  <h2 class="white mb-5">Ils me font confiance</h2>
-  <div class="company-logo-div">
-    <img src=<%= image_path("logo-mediapp.png")%> class="logo-company" />
-    <img src=<%= image_path("logo-cartelis.png")%> class="logo-company" />
-    <img src=<%= image_path("logo-goodwill.png")%> class="logo-company" />
-    <img src=<%= image_path("logo-bien-fonde.png")%> class="logo-company" />
-    <img src=<%= image_path("logo-mister-auto.png")%> class="logo-company" />
+<div id="review" class="container">
+  <h2 class="backblue py-3">Leurs avis</h2>
+  <div class="review-cards d-flex justify-content-between">
+    <div class="review-card">
+      <img src=<%= image_path("logo-bien-fonde.png")%> class="review-image" />
+      <p class="review-author backblue">Alizée, CEO</p>
+      <p class="review-content">" Tristan a réalisé un travail de précision et plus poussé que ce qui était demandé.
+          Il a su opérer un suivi au quotidien et donner ses inputs lorsque cela lui était demandé.
+          Je le recommande vivement pour améliorer ses campagnes de marketing digital et outils de pilotage. "</p>
+      <a href="" class="btn primary-button review-button">Voir sur Malt</a>
+    </div>
+    <div class="review-card">
+      <img src=<%= image_path("logo-mediapp.png")%> class="review-image" />
+      <p class="review-author backblue">Guillaume, CEO</p>
+      <p class="review-content">" Tristan est très à l'écoute, réactif, efficace, disponible, force de proposition :
+       c'était un vrai plaisir de collaborer avec lui, je le recommande vivement ! "</p>
+      <a href="" class="btn primary-button review-button">Voir sur Malt</a>
+    </div>
+    <div class="review-card">
+      <img src=<%= image_path("logo-bien-fonde.png")%> class="review-image" />
+      <p class="review-author backblue">Frederic</p>
+      <p class="review-content">" Bonne communication, respect des demandes et des délais. Tristan ne s'arrête pas dès les premières difficultés.
+      Je recommande "</p>
+      <a href="" class="btn primary-button">Voir sur Malt</a>
+    </div>
   </div>
 </div>
+
+<%# Banner logo confiance %>
 
 <%# Formulaire de contact%>
 <div id="contact">
@@ -180,13 +211,12 @@
   </div>
 </div>
 
-<div id="review">
 
-</div>
-
-    <div class="form-desc-container">
-    <img src=<%= image_path("frontend.svg")%> alt="frontend" class="skill-desc-photo">
-    </div>
+    <%# <div class="form-desc-container"> %>
+    <%# <img src=
+    <%= image_path("frontend.svg")%>
+    alt="frontend" class="skill-desc-photo"> %>
+    <%# </div> %>
 
 <%# Footer %>
 <div class="footer">

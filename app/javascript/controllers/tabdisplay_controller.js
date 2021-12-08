@@ -4,9 +4,7 @@ export default class extends Controller {
   static targets = ['tabproject', 'texttab'];
 
   connect() {
-    // console.log("yo")
-    // console.log(this.tabprojectTargets);
-  }
+ }
 
   change(){
     let selected = event.currentTarget.getAttribute("href");

@@ -2,28 +2,25 @@
   background-color: #b5272d;
 }
 
-.project-tab{
-  border: none;
-}
-
 .project-tab-list{
   margin-bottom: 10px;
+  opacity: 1;
 }
 
 .tab-link{
   text-decoration: none;
   color: white;
-  opacity: 0.8;
+  opacity: .6;
   font-size: 18px;
 }
 .tab-link:hover{
   text-decoration: none;
   color: white;
-  opacity: 1;
 }
 
 .selectedtab{
-  border-bottom: solid 1px white;
+  border-bottom: solid 3px white;
+  opacity: 1;
 }
 
 .nav-tabs {
@@ -144,10 +141,11 @@
 
 	&__body {
 		position: relative;
-		padding: 2em;
+		padding: 1em;
 		transition-property: transform;
 		transition-delay: $delay;
     height: 150px;
+    text-align:center;
 	}
 
 	&.hover &__body {

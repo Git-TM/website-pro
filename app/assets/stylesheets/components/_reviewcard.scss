@@ -1,0 +1,33 @@
+.review-card {
+  width: 300px;
+  border-radius: 20px;
+  background-image: linear-gradient(315deg, rgba(66, 55, 143, .9) 0%, rgba(245, 56, 68, .9) 94%);
+  color: white;
+  padding: 20px;
+  text-align:center;
+  font-style: italic;
+  position: relative;
+}
+
+.review-content{
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.review-author{
+  font-size: 18px;
+}
+
+.review-image{
+  width: 120px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.review-button {
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+  left: 20%;
+  right: 20%;
+}

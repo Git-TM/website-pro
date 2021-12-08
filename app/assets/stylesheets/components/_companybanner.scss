@@ -15,5 +15,60 @@
 .section-logo{
 background-color: #42378f;
 background-image: linear-gradient(315deg, #42378f 0%, #f53844 94%);
-  padding: 20px 0px;
+padding: 20px 0px;
+}
+
+// @mixin white-gradient {
+// 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+// }
+
+$animationSpeed: 10s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 3))}
+}
+
+
+// Styling
+.slider {
+	// background-image: linear-gradient(315deg, #42378f 0%, #f53844 94%);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+
+	&::before,
+	&::after {
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 5;
+	}
+
+	.slide {
+		height: 100px;
+		width: 250px;
+    margin: 0 20px;
+	}
 }

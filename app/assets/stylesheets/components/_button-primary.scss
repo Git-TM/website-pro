@@ -1,25 +1,26 @@
 .primary-button{
+  // background-image: linear-gradient(315deg, #42378f 0%, #f53844 94%);
+  // border: 3px solid;
+  // border-image-source: linear-gradient(315deg, #42378f 0%, #f53844 94%);
+  background-color: $red;
   color: white;
-  /* border: 1px solid rgba(0,0,0, .5); */
   padding: 8px 24px;
   border-radius: 20px;
   font-weight: lighter;
-  /* opacity: .8; */
   transition: opacity 0.3s ease;
   text-decoration: none;
-  background-color: $red;
-  box-shadow: 0 0 15px rgba(255, 255, 255, .5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, .2);
+  font-size: 20px;
 }
 
 .primary-button:hover{
-  color: $red;
-  border: 1px solid $red;
+  border: 2px solid $red;
+  color: $backblue;
   padding: 8px 24px;
   border-radius: 20px;
   font-weight: lighter;
   transition: opacity 0.3s ease;
   text-decoration: none;
-  background-color: white;
   box-shadow: 0 0 15px rgba(255, 255, 255, .5);
 }
 
