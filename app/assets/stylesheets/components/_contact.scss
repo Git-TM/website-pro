@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   margin: 30px auto;
-  background-color: white
 }
 
 .form-contact{
@@ -11,7 +10,8 @@
   padding: 20px 30px;
   width: 60%;
   text-align: center;
-  color: black;
+  color: $backblue;
+  background-color: white;
 }
 
 .form-desc-container{

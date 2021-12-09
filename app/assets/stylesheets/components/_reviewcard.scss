@@ -1,12 +1,37 @@
 .review-card {
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
-  background-image: linear-gradient(315deg, rgba(66, 55, 143, .9) 0%, rgba(245, 56, 68, .9) 94%);
+  // background-image: linear-gradient(315deg, rgba(66, 55, 143, .9) 0%, rgba(245, 56, 68, .9) 94%);
   color: white;
-  padding: 20px;
   text-align:center;
   font-style: italic;
   position: relative;
+  background-color: $red;
+  background-image: -webkit-linear-gradient(225deg, #fff 65%, $red 65%);
+  min-height: 200px;
+}
+
+.review-image-wrapper{
+  width: 40%;
+  padding: 20px;
+  // background: linear-gradient(110deg, black 0%, black 85%, transparent 26%);
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.review-image{
+  width: 120px;
+  height: 50px;
+  object-fit: contain;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+ }
+
+.review-content-wrapper{
+  width: 60%;
+  padding: 20px;
 }
 
 .review-content{
@@ -18,11 +43,6 @@
   font-size: 18px;
 }
 
-.review-image{
-  width: 120px;
-  height: 50px;
-  object-fit: contain;
-}
 
 .review-button {
   position: absolute;
