@@ -20,18 +20,13 @@ ActiveStorage.start()
 
 // External imports
 import "bootstrap";
+import { loadDynamicBannerText } from '../components/banner';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-  //   currTabTarget = $(e.target).attr('href');
-  //   let remoteUrl = $(this).attr('data-tab-remote')
-  //   if (remoteUrl !== '') {
-  //     $(currTabTarget).load(remoteUrl)
-  //   }
-  // })
+  loadDynamicBannerText();
 });
 
 
