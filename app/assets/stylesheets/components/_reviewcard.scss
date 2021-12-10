@@ -6,8 +6,9 @@
   text-align:center;
   font-style: italic;
   position: relative;
-  background-color: $red;
-  background-image: -webkit-linear-gradient(225deg, #fff 65%, $red 65%);
+  background-color: white;
+  // background-image: -webkit-linear-gradient(225deg, #fff 65%, $red 65%);
+  // background: -webkit-linear-gradient(225deg, #FA7268 65%, #e63946 65%);
   min-height: 200px;
 }
 
@@ -15,14 +16,16 @@
   width: 40%;
   padding: 20px;
   // background: linear-gradient(110deg, black 0%, black 85%, transparent 26%);
+  background: linear-gradient(110deg, #FA7268 0%, #e63946 85%, transparent 26%);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   display: inline-block;
-  height: 100%;
   vertical-align: middle;
 }
 
 .review-image{
-  width: 120px;
-  height: 50px;
+  width: 200px;
+  height: 90px;
   object-fit: contain;
   display: inline-block;
   height: 100%;
@@ -50,4 +53,8 @@
   text-align: center;
   left: 20%;
   right: 20%;
+}
+
+.carousel-indicators {
+  bottom: -15px!important;
 }

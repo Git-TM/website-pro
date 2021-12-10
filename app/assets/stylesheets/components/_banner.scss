@@ -3,9 +3,9 @@
   justify-content: space-evenly;
   height: 80vh;
   // background-color: $backblue;
-  background-image: image-url("banner.svg");
+  background-image: image-url("background-red.svg");
   width:100%;
-  object-fit:fill;
+  object-fit:cover;
 }
 
 .banner-photo {
