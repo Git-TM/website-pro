@@ -14,48 +14,58 @@
   <div class="banner-text">
     <h1>Développeur Ruby on Rails / JS</h1>
     <h2>Disponible pour vos <span id="banner-typed-text" class="backblue"></span></h2>
-    <a href="#contact" class = "primary-button">Me contacter</a>
+    <a href="#contact" class = "primary-button dark-button">Me contacter</a>
   </div>
   <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="banner-photo">
 </div>
 
+<div id="clouds">
+  <div class="cloud x1"></div>
+  <div class="cloud x2"></div>
+  <div class="cloud x3"></div>
+  <div class="cloud x4"></div>
+  <div class="cloud x5"></div>
+</div>
+
 <!-- 333 A propos de moi -->
-<div class="container" id="apropos">
+<div class="container section" id="apropos">
   <div class="bloc-apropos">
     <img src= <%= image_path("lewagon.jpg")%> alt="photo-wagon" class="photo-a-propos">
     <div class="desc-a-propos">
       <h2>A propos de moi</h2>
-      <p>Après le bac je fais des études d'ingénieur où j'apprends les maths, les statistiques, la chimie et la biologie. Après une expérience en cabinet de conseil digital & growth, je me lance en
-      freelance sur ces mêmes sujets pendant 1 an (SEO, prospection B2B & marketing Automation). J'apprends à livrer mes clients, à organiser mon travail (Merci Notion !) sur des missions transverses. Je touche rapidement au côté technique
+      <p>Après le bac je fais des études d'ingénieur et une expérience en cabinet de conseil digital & growth, je me lance en
+      freelance sur ces mêmes sujets pendant 1 an (SEO, prospection B2B & marketing Automation). J'apprends sur des missions transverses en touchant rapidement au côté technique
       avec l'utilisation de gestionnaires d'APIs, de page web (HTML/CSS), de JavaScript (Google Script).
-      En 2021, je saute le pas et décide d'aller au "Wagon Paris", meilleur bootcamp de code au monde, pour enrichir mes compétences techniques
-      dans le développement web d'applications. Je touche à l'algorithmie, aux bases de données, aux APIs etc..</p>
+      En 2021, je saute le pas et décide d'aller au "Wagon Paris" pour enrichir mes compétences techniques
+      dans le développement web d'applications. Depuis je développe en Ruby on rails, et JavaScript.</p>
     </div>
   </div>
 </div>
 
 <%# Mes technologies %>
-<div class="technologie-div">
-  <h2 class="pb-4">Mes technologies</h2>
-  <div class="technos-wrapper py-2">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="logo-tech skill" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="logo-tech skill" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" class="logo-tech skill" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" class="logo-tech skill"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" class="logo-tech skill" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" class="logo-tech skill" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" class="logo-tech skill" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" class="logo-tech skill" />
+<div class="section" id="technologie-div">
+  <div class="technologie-div">
+    <h2 class="pb-4">Mes technologies</h2>
+    <div class="technos-wrapper py-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="logo-tech skill" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="logo-tech skill" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" class="logo-tech skill" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" class="logo-tech skill"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" class="logo-tech skill" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" class="logo-tech skill" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" class="logo-tech skill" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" class="logo-tech skill" />
+    </div>
   </div>
 </div>
 
 
-
-<div class="background-sombre" id="realisations">
+<div class="background-sombre section" id="realisations">
   <%# Services proposées %>
   <div class="container" id="service">
     <h2 class="mb-5">Mes services</h2>
     <div class="container-skill">
+    <p class="text-center mb-5">Je vous aiderai pour la mise en place de votre MVP sur Rails, ou pour améliorer votre produit existant, développer des nouvelles fonctionnalités, intégrations. Voici les services que je propose : </p>
       <div class="blocs-service">
         <div class="bloc-service">
           <img src=<%= image_path("frontend.svg")%> alt="frontend" class="skill-desc-photo">
@@ -104,14 +114,16 @@
       </div>
     </div>
   </div>
-  <div id="clouds">
+  <%# <div id="clouds">
     <div class="cloud x1"></div>
     <div class="cloud x2"></div>
     <div class="cloud x3"></div>
     <div class="cloud x4"></div>
     <div class="cloud x5"></div>
-  </div>
-<div class="section-logo">
+  </div> %>
+</div>
+
+<div class="section-logo section" id="banner-company">
   <h2 class="white pb-5">Ils me font confiance</h2>
   <div class="slider">
     <div class="slide-track">
@@ -130,6 +142,7 @@
 </div>
 
   <%# Réalisations  %>
+<div id="realisations" class="section">
   <div class="container">
     <h2 class="white mb-5">Mes réalisations</h2>
     <div class="real-contain" data-controller="tabdisplay">
@@ -149,11 +162,13 @@
           <div class="tab-pane d-none cards-real tab2" id="tab2" data-tabdisplay-target="tabproject">
             <% @growthprojects.each do |project| %>
               <%= render 'pages/projectcardfree', project: project%>
+              <%= render 'projects/show', project: project%>
             <% end %>
           </div>
           <div class="tab-pane d-none cards-real tab3" id="tab3" data-tabdisplay-target="tabproject">
             <% @freelancecodeprojects.each do |project| %>
               <%= render 'pages/projectcardfree', project: project%>
+              <%= render 'projects/show', project: project%>
             <% end %>
           </div>
         </div>
@@ -162,93 +177,93 @@
   </div>
 </div>
 
-<h2>Ce que disent mes clients</h2>
-<div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
-  <ol class="carousel-indicators mt-5">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="review-card d-flex">
-        <div class="review-image-wrapper">
-          <img src=<%= image_path("logo-bien-fonde.png")%> class="review-image" />
+<div id="review" class="section">
+  <h2>Ce que disent mes clients</h2>
+  <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+    <ol class="carousel-indicators mt-5">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <div class="review-card d-flex">
+          <div class="review-image-wrapper">
+            <img src=<%= image_path("logo-bien-fonde.png")%> class="logo-company" />
+          </div>
+          <div class="review-content-wrapper">
+            <p class="review-author backblue">Alizée, CEO</p>
+            <p class="review-content backblue">" Tristan a réalisé un travail de précision et plus poussé que ce qui était demandé.
+            Il a su opérer un suivi au quotidien et donner ses inputs lorsque cela lui était demandé. Je le recommande vivement pour améliorer ses campagnes de marketing digital et outils de pilotage. "</p>
+            <a href="https://www.malt.fr/profile/tristanmonteiro" class="btn primary-button">Voir sur Malt</a>
+          </div>
         </div>
-        <div class="review-content-wrapper">
-          <p class="review-author backblue">Alizée, CEO</p>
-          <p class="review-content backblue">" Tristan a réalisé un travail de précision et plus poussé que ce qui était demandé.
-              Il a su opérer un suivi au quotidien et donner ses inputs lorsque cela lui était demandé.
-              Je le recommande vivement pour améliorer ses campagnes de marketing digital et outils de pilotage. "</p>
-          <a href="https://www.malt.fr/profile/tristanmonteiro" class="btn primary-button">Voir sur Malt</a>
+      </div>
+      <div class="carousel-item">
+        <div class="review-card d-flex">
+          <div class="review-image-wrapper">
+            <img src=<%= image_path("logo-mediapp.png")%> class="logo-company" />
+          </div>
+          <div class="review-content-wrapper">
+            <p class="review-author backblue">Guillaume, CEO</p>
+            <p class="review-content backblue">" Tristan est très à l'écoute, réactif, efficace, disponible, force de proposition :
+            c'était un vrai plaisir de collaborer avec lui, je le recommande vivement !"</p>
+            <a href="https://www.malt.fr/profile/tristanmonteiro" class="btn primary-button">Voir sur Malt</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="review-card d-flex">
+          <div class="review-image-wrapper">
+            <img src=<%= image_path("logo-tof.jpeg")%> class="review-image" />
+          </div>
+          <div class="review-content-wrapper">
+            <p class="review-author backblue">Frederic, CEO</p>
+            <p class="review-content backblue">" Bonne communication, respect des demandes et des délais. Tristan ne s'arrête pas dès les premières difficultés.
+            Je recommande"</p>
+            <a href="https://www.malt.fr/profile/tristanmonteiro" class="btn primary-button">Voir sur Malt</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <div class="review-card d-flex">
-        <div class="review-image-wrapper">
-          <img src=<%= image_path("logo-mediapp.png")%> class="logo-company" />
-        </div>
-        <div class="review-content-wrapper">
-          <p class="review-author backblue">Guillaume, CEO</p>
-          <p class="review-content backblue">" Tristan est très à l'écoute, réactif, efficace, disponible, force de proposition :
-          c'était un vrai plaisir de collaborer avec lui, je le recommande vivement !"</p>
-          <a href="https://www.malt.fr/profile/tristanmonteiro" class="btn primary-button">Voir sur Malt</a>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="review-card d-flex">
-        <div class="review-image-wrapper">
-          <img src=<%= image_path("logo-bien-fonde.png")%> class="review-image" />
-        </div>
-        <div class="review-content-wrapper">
-          <p class="review-author backblue">Frederic, CEO</p>
-          <p class="review-content backblue">" Bonne communication, respect des demandes et des délais. Tristan ne s'arrête pas dès les premières difficultés.
-          Je recommande"</p>
-          <a href="https://www.malt.fr/profile/tristanmonteiro" class="btn primary-button">Voir sur Malt</a>
-        </div>
-      </div>
-    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
-<%# Banner logo confiance %>
 
 <%# Formulaire de contact%>
-<div id="contact">
+<div id="contact" class="section">
   <h2 class="py-3">Contactez moi</h2>
   <div class="form-container">
     <div class="form-contact">
-    <%= simple_form_for (@contact) do |f| %>
-      <div class="form-row">
-        <div class="col">
-          <%= f.input :firstname, as: :string, class:"form-control input-type" %>
+      <%= simple_form_for (@contact) do |f| %>
+        <div class="form-row">
+          <div class="col">
+            <%= f.input :firstname, as: :string, class:"form-control input-type" %>
+          </div>
+          <div class="col">
+            <%= f.input :name, as: :string, class:"form-control  input-type" %>
+          </div>
         </div>
-        <div class="col">
-          <%= f.input :name, as: :string, class:"form-control  input-type" %>
+        <div class="form-row">
+          <div class="col">
+            <%= f.input :email, as: :string, class:"form-control  input-type" %>
+          </div>
+          <div class="col">
+            <%= f.input :company, as: :string, class:"form-control  input-type" %>
+          </div>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="col">
-          <%= f.input :email, as: :string, class:"form-control  input-type" %>
-        </div>
-        <div class="col">
-          <%= f.input :company, as: :string, class:"form-control  input-type" %>
-        </div>
-      </div>
-      <%= f.input :message, as: :text, class:"input-type  input-type" %>
-      <%= f.button :submit, class: "primary-button", value: "Valider ma demande"%>
-    <% end %>
-
+        <%= f.input :message, as: :text, class:"input-type  input-type" %>
+        <%= f.button :submit, class: "primary-button dark-button", value: "Valider ma demande"%>
+      <% end %>
+    </div>
   </div>
 </div>
 

@@ -4,39 +4,37 @@
 
     <div class="modal-title text-center mb-1">
       <%= submit_tag 'X', :type => :reset, :class => "close-modal", "data-dismiss" => "modal", "aria-hidden" => "true" %>
-      <h2 class="gradient-text"><%= project.projecttype %></h2>
-      <span><%= project.context %></span>
+      <h2 class="gradient-text border-bottom pb-4"><%= project.projecttype %></h2>
+    </div>
+        <h2 class="text-center backblue"> Description</h2>
+        <p class="text-center backblue"><%= project.context %></p>
+    <div class="modal-photos-div d-flex justify-content-around">
+      <img src=<%= image_path("mokup-tracking.jpeg")%> class="photo-modal mr-3" />
+      <img src=<%= image_path("mokup-website.jpeg")%> class="photo-modal" />
     </div>
 
-    <div class="modal-wrapper d-flex">
+    <div class="modal-wrapper justify-content-between">
 
-      <div class="modal-photos-div">
-        <img src=<%= image_path("mokup-tracking.jpeg")%> class="photo-modal" />
-        <img src=<%= image_path("mokup-website.jpeg")%> class="photo-modal" />
+      <div class="modal-content-left">
+        <%# <h2> General tags </h2> %>
+        <div class="codetags-wrapper d-flex">
+          <% project.codetags.split(',').map(&:strip).each do |tag| %>
+            <div class="techno">
+              <span class="techno-desc"><%= tag %></span>
+            </div>
+          <% end %>
+        </div>
       </div>
-
-      <div class="modal-desc">
-        <h2 class="text-left"> Description</h2>
-        <p><%= project.context %></p>
+      <div class="modal-content-right">
         <h2 class="text-left"> Fonctionnalités</h2>
         <ul>
         <% project.features.split(',').map(&:strip).each do |feature| %>
         <li><%= feature %></li>
         <% end %>
         </ul>
-        <h2> General tags </h2>
-        <div class="codetags-wrapper d-flex">
-          <% project.codetags.split(',').map(&:strip).each do |tag| %>
-          <div class="techno">
-            <span class="techno-desc"><%= tag %></span>
-          </div>
-          <% end %>
-        </div>
-
       </div>
-
-
     </div>
+
 
   </div>
 </div>

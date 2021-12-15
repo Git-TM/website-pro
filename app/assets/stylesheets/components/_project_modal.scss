@@ -1,5 +1,6 @@
 .modal-wrapper{
   color: $backblue;
+  display:flex;
 }
 
 .modal-content{
@@ -16,7 +17,7 @@
 }
 
 .photo-modal{
-  width: 400px;
+  width: 40%;
   margin: 20px 0px;
   border-radius: 20px;
 }
@@ -45,4 +46,8 @@
 .techno-desc{
   color:white;
   font-size: 12px;
+}
+
+.codetags-wrapper{
+  flex-wrap: wrap;
 }

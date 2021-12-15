@@ -1,7 +1,5 @@
 @media(max-width: 1201px) {
-  .cards {
 
-  }
 }
 
 @media(max-width: 992px) {
@@ -43,6 +41,26 @@
     margin-top: 20px;
     padding: 0 10px;
   }
+  .blocs-service{
+    display: block;
+  }
+
+  .bloc-service{
+    width:100%;
+  }
+
+  .skill-desc-photo{
+    width: 200px;
+    object-fit: contain;
+  }
+
+  .techologie-div{
+    height: 280px;
+  }
+
+  .modal-wrapper{
+    display:block;
+  }
 
 }
 
@@ -68,10 +86,6 @@
   .container-skill{
     padding: 0;
   }
-  .skill-desc-photo{
-    width: 95px;
-    object-fit: contain;
-  }
 
   .skill{
     display:block;
@@ -81,7 +95,10 @@
     font-size: 12px;
   }
   .nav-categories{
-  display:none;
+    display:none;
+
+
+
 }
 
 }

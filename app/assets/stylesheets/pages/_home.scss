@@ -22,28 +22,24 @@ body{
 
 h1 {
   font-size: 40px;
-  font-family: 'Yaldevi', sans-serif;
   text-align: center;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 30px;
-  font-family: 'Yaldevi', sans-serif;
+  font-size: 32px;
   text-align: center;
-  font-weight:lighter;
+  font-weight:normal;
 }
 
 h3 {
   font-size: 25px;
-  font-family: 'Yaldevi', sans-serif;
   text-align: center;
   font-weight: bold;
 }
 
 p {
-  font-size: 14px;
-  font-family: 'Yaldevi', sans-serif;
+  font-size: 16px;
 }
 
 span {
@@ -67,4 +63,8 @@ span {
 .bold{
   font-weight: bold;
   font-size: 25px;
+}
+
+.section{
+  padding: 20px 0;
 }

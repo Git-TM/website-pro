@@ -1,12 +1,6 @@
 .primary-button{
-  // background-image: linear-gradient(315deg, #42378f 0%, #f53844 94%);
-  // border: 3px solid;
-  // border-image-source: linear-gradient(315deg, #42378f 0%, #f53844 94%);
-
-  color: white;
   padding: 8px 24px;
   border-radius: 20px;
-  background-image: linear-gradient(315deg, #FA7268 0%, #e63946 94%);
   transition: opacity 0.3s ease;
   text-decoration: none;
   box-shadow: 0 0 15px rgba(255, 255, 255, .2);
@@ -15,12 +9,22 @@
 
 .primary-button:hover{
   border: 2px solid;
-  border-color: linear-gradient(315deg, #FA7268 0%, #e63946 94%);
   padding: 8px 24px;
   border-radius: 20px;
   transition: opacity 0.3s ease;
   text-decoration: none;
   box-shadow: 0 0 15px rgba(255, 255, 255, .5);
+}
+
+.dark-button{
+  color: white;
+  background-color: #F3B61F;
+}
+
+.dark-button:hover{
+  border-color: #F3B61F;
+  background-color: $backblue;
+  color: #F3B61F;
 }
 
 a {
