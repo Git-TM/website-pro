@@ -29,7 +29,6 @@
   .bloc-apropos{
     display: block;
     text-align: center;
-    // margin: 0 auto;
   }
 
   .photo-apropos{
@@ -37,9 +36,9 @@
   }
 
   .desc-a-propos{
-    width: 100%;
-    margin-top: 20px;
-    padding: 0 10px;
+    width: 95%;
+    margin: 10px;
+    padding: 10px 20px;
   }
   .blocs-service{
     display: block;
@@ -60,6 +59,18 @@
 
   .modal-wrapper{
     display:block;
+  }
+
+  .modal-content-left{
+    width: 100%;
+  }
+
+  .modal-content-right{
+    width: 100%;
+  }
+
+  .review-image {
+    width: 100px;
   }
 
 }
@@ -94,14 +105,20 @@
   .skill-desc{
     font-size: 12px;
   }
+
   .nav-categories{
     display:none;
+  }
 
-
-
-}
+  .form-contact{
+    width: 75%;
+  }
 
 }
 
 @media(max-width: 460px) {
+
+  .technologie-div {
+    height: 300px;
+  }
 }

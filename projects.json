@@ -9,7 +9,7 @@
     "category": "Freelance Web Dev",
     "projecttype": "Application web",
     "imgurl": "back-csv.png",
-    "logourl": "logo-kaioit.jpeg",
+    "logourl": "logo-kaioit.png",
     "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
     "features": "Mise en place d'une application Rails, Intégration des contacts existants en BDD, Intégration de Sidekiq, Enrichissement automatisé via 3 appels APIs, Validation des données"
   },
@@ -24,8 +24,8 @@
     "description": "",
     "category": "Projets personnels",
     "projecttype": "Application web",
-    "imgurl": "maps-mission.jpeg",
-    "logourl": "logo-kaioit.jpeg",
+    "imgurl": "maps-mission.png",
+    "logourl": "logo-kaioit.png",
     "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
     "features": "Mise en place d'une application Rails, Ajout de Sidekiq"
   }
@@ -41,7 +41,7 @@
     "description": "",
     "category": "Projets personnels",
     "projecttype": "Site web",
-    "imgurl": "mokup-website.jpeg",
+    "imgurl": "mokup-website.png",
     "logourl": "",
     "results": "Un site tout beau tout neuf",
     "features": "Intégration de Datepickr, Activeview email, Ajouts d'effets CSS, Projets générés depuis un fichier JSON"
@@ -57,7 +57,7 @@
     "description": "",
     "category": "Projets personnels",
     "projecttype": "Application web",
-    "imgurl": "mokup-tracking.jpeg",
+    "imgurl": "mokup-tracking.png",
     "logourl": "",
     "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
     "features": "Mise en place de vue type Dashboard, Création des vues dates (Granularité semaine & mois), Intégration de chartkick.js, Définition d'objectifs : temps / finance, Création d'une API ouverte, Automatisation des flux de données "
@@ -74,7 +74,7 @@
     "description": "",
     "category": "Growth / Freelance",
     "projecttype": "Mission technique",
-    "imgurl": "mokup-tracking.jpeg",
+    "imgurl": "mokup-tracking.png",
     "logourl": "",
     "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
     "features": "Mise en place de vue type Dashboard"

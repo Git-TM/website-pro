@@ -1,6 +1,6 @@
 .primary-button{
   padding: 8px 24px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: opacity 0.3s ease;
   text-decoration: none;
   box-shadow: 0 0 15px rgba(255, 255, 255, .2);
@@ -18,13 +18,15 @@
 
 .dark-button{
   color: white;
-  background-color: #F3B61F;
+  background-color: #32936F;
+  opacity: .95;
 }
 
 .dark-button:hover{
-  border-color: #F3B61F;
-  background-color: $backblue;
-  color: #F3B61F;
+  border-color: #32936F;
+  background-color: white;
+  color: #32936F;
+  opacity: 1;
 }
 
 a {

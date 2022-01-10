@@ -5,7 +5,7 @@
 }
 
 .desc-a-propos{
-  width: 35%;
+  width: 50%;
   letter-spacing: .03em;
   line-height: 1.7em;
   text-align: justify;
@@ -15,6 +15,7 @@
 }
 
 .photo-a-propos{
-  width: 60%;
+  width: 40%;
   border-radius: 30px;
+  object-fit: cover;
 }
