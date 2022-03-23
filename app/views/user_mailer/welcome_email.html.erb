@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Tu as une nouvelle demande de mission </h1>
+    <p>
+      Le client s'apelle <%= @contact.firstname %> <%= @contact.name%><br>
+      Son entreprise est <%= @contact.company %><br>
+      Tu peux le contacter sur son mail <%= @contact.email %><br>
+    </p>
+    <p>
+      Son message est le suivant : " <%= @contact.message %> "<br>
+    </p>
+  </body>
+</html>
