@@ -11,17 +11,3 @@
     <%= yield %>
   </body>
 </html>
-
-
-<%# test  %>
-
-<div class="modal-desc-right modal-bloc-style mx-3">
-  <h2> General tags </h2>
-  <div class="technos-wrapper">
-    <% project.codetags.split(',').map(&:strip).each do |tag| %>
-    <div class="techno">
-      <span class="techno-desc"><%= tag %></span>
-    </div>
-    <% end %>
-  </div>
-</div>

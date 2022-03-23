@@ -1,5 +1,6 @@
 class UserMailer < ApplicationMailer
   def welcome_email
-    mail(to: "tristan.monteiro.pro@gmail.com", subject: 'new announce')
+    @contact = params[:contact]
+    mail(to: @contact.email, subject: 'Nouvelle Mission Site Web')
   end
 end
