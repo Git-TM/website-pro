@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_filter :redirect_to_https
+  # before_filter :redirect_to_https
   def home
     @contact = Contact.new
     @growthprojects = Project.where(category: "Growth / Freelance")
