@@ -16,7 +16,7 @@
       <div class="modal-content-left">
         <h2 class="text-left"> Fonctionnalités</h2>
         <ul>
-        <% project.features.split(',').map(&:strip).each do |feature| %>
+        <% project.features.each do |feature| %>
         <li><%= feature %></li>
         <% end %>
         </ul>
@@ -24,7 +24,7 @@
       <div class="modal-content-right">
         <h2 > Technologies </h2>
         <div class="codetags-wrapper d-flex">
-          <% project.codetags.split(',').map(&:strip).each do |tag| %>
+          <% project.codetags.each do |tag| %>
             <div class="techno">
               <span class="techno-desc"><%= tag %></span>
             </div>

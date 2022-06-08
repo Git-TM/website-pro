@@ -14,7 +14,8 @@ puts "---- Creating Projects----"
 allkeys.each do |key|
   new_project = Project.new(projectname: data_hash[key]['name'],
                             context:data_hash[key]['context'],
-                            generaltags:data_hash[key]['name'],
+                            mokup:data_hash[key]['mokup'],
+                            client:data_hash[key]['client'],
                             codetags:data_hash[key]['codetags'],
                             githublink:data_hash[key]['githublink'],
                             weblink:data_hash[key]['weblink'],
@@ -22,7 +23,7 @@ allkeys.each do |key|
                             projecttype:data_hash[key]['projecttype'],
                             imgurl:data_hash[key]['imgurl'],
                             logourl:data_hash[key]['logourl'],
-                            results:data_hash[key]['results'],
+                            logoclient:data_hash[key]['logoclient'],
                             features:data_hash[key]['features'])
   new_project.save
   puts "---- Project created ----"

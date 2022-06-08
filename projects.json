@@ -4,14 +4,12 @@
     "context": "Enrichissement de données des dirigeants de 13.000 entreprises",
     "weblink": "",
     "githublink": "back-csv.png",
-    "generaltags": "Growth Hacking, Enrichissement de données",
     "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
     "category": "Freelance Web Dev",
-    "projecttype": "Application web",
+    "type": "Application web",
     "imgurl": "back-csv.png",
     "logourl": "logo-kaioit.png",
-    "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
-    "features": "Mise en place d'une application Rails, Intégration des contacts existants en BDD, Intégration de Sidekiq, Enrichissement automatisé via 3 appels APIs, Validation des données"
+    "features": '["Mise en place d'une application Rails", "Intégration des contacts existants en BDD", "Intégration de Sidekiq", "Enrichissement automatisé via 3 appels APIs, Validation des données"]'
   },
 
   "project2": {
@@ -19,14 +17,12 @@
     "context": "Application web à destination des skateurs parisiens",
     "weblink": "",
     "githublink": "",
-    "generaltags": "Growth Hacking, Enrichissement de données",
     "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
     "description": "",
     "category": "Projets personnels",
-    "projecttype": "Application web",
+    "type": "Application web",
     "imgurl": "maps-mission.png",
     "logourl": "logo-kaioit.png",
-    "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
     "features": "Mise en place d'une application Rails, Ajout de Sidekiq"
   }
 
@@ -36,14 +32,12 @@
     "context": "Site web Portfolio pour référencer mon travail freelance",
     "weblink": "",
     "githublink": "",
-    "generaltags": "Growth Hacking, Enrichissement de données",
     "codetags": "Ruby On Rails, Datepickr, Stimulus JS, CSS",
     "description": "",
     "category": "Projets personnels",
-    "projecttype": "Site web",
+    "type": "Site web",
     "imgurl": "mokup-website.png",
     "logourl": "",
-    "results": "Un site tout beau tout neuf",
     "features": "Intégration de Datepickr, Activeview email, Ajouts d'effets CSS, Projets générés depuis un fichier JSON"
   },
 
@@ -52,14 +46,12 @@
     "context": "Gestion du suivi temps et des finances personnels",
     "weblink": "",
     "githublink": "",
-    "generaltags": "Application Web, Enrichissement de données",
     "codetags": "Ruby On Rails, Chartkick.js, Intégration d'APIs, Stimulus.js",
     "description": "",
     "category": "Projets personnels",
-    "projecttype": "Application web",
+    "type": "Application web",
     "imgurl": "mokup-tracking.png",
     "logourl": "",
-    "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
     "features": "Mise en place de vue type Dashboard, Création des vues dates (Granularité semaine & mois), Intégration de chartkick.js, Définition d'objectifs : temps / finance, Création d'une API ouverte, Automatisation des flux de données "
   }
 
@@ -69,14 +61,12 @@
     "context": "Migration de 10 emails transactionnelsen 19 langues vers Emarsys",
     "weblink": "",
     "githublink": "",
-    "generaltags": "",
-    "codetags": "Language ESN propre à Emarsys, migration des données, Validation API depuis fichier JSON",
+    "codetags": ["Language ESN propre à Emarsys", "HTML / CSS pour l'emailing"],
     "description": "",
     "category": "Growth / Freelance",
-    "projecttype": "Mission technique",
+    "type": "Mission technique",
     "imgurl": "mokup-tracking.png",
     "logourl": "",
-    "results": "Enrichissement des dirigeants (Mail + Profil Linkedin) à hauteur de +25% via Sideekiq et les APIs Pappers et Societeinfo.com",
     "features": "Mise en place de vue type Dashboard"
   }
 }
