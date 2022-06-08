@@ -1,3 +1,7 @@
-<% @projects.each do |project| %>
-<h1><%= project.projectname %></h1>
-<% end %>
+<div class="admin-project-cards">
+  <% @projects.each do |project| %>
+  <div class="admin-project-card">
+    <%= link_to project.projectname, project_path(project) %>
+  </div>
+  <% end %>
+</div>
