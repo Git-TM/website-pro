@@ -9,7 +9,7 @@
     "type": "Application web",
     "imgurl": "back-csv.png",
     "logourl": "logo-kaioit.png",
-    "features": '["Mise en place d'une application Rails", "Intégration des contacts existants en BDD", "Intégration de Sidekiq", "Enrichissement automatisé via 3 appels APIs, Validation des données"]'
+    "features": ["Mise en place dune application Rails", "Intégration des contacts existants en BDD", "Intégration de Sidekiq", "Enrichissement automatisé via 3 appels APIs, Validation des données"]
   },
 
   "project2": {

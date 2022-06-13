@@ -26,7 +26,7 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     @project.update(project_params)
-    redirect_to project_path(@project_new)
+    redirect_to project_path(@project)
   end
 
   def destroy
@@ -38,6 +38,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :details)
+    params.require(:project).permit(:projectname, :context, :codetags, :features)
   end
 end

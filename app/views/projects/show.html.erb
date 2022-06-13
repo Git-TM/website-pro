@@ -1,11 +1,12 @@
 <%= image_tag(@project.imgurl, alt: "logo", class: "admin-project-image") %>
 
 <h1><%= @project.projectname %></h1>
+<%= link_to "Editer", edit_project_path(@project) %>
 <%= @project.context %>
 </br>
-<%= @project.generaltags %>
-</br>
-<%= @project.codetags %>
+<% @project.features.each do |tag| %>
+  <%= tag %>
+<% end %>
 </br>
 <%= @project.category %>
 </br>

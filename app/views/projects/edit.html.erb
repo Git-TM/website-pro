@@ -1,0 +1,9 @@
+<div class="container">
+  <%= simple_form_for @project do |f| %>
+    <%= f.input :projectname %>
+    <%= f.input :context %>
+    <%= f.input :codetags %>
+    <%= f.input :features %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
