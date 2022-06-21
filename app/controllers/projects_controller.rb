@@ -38,6 +38,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:projectname, :context, :codetags, :features)
+    params.require(:project).permit(:projectname, :context, :codetags, { features: [] })
   end
 end

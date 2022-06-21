@@ -2,8 +2,11 @@
   <%= simple_form_for @project do |f| %>
     <%= f.input :projectname %>
     <%= f.input :context %>
-    <%= f.input :codetags %>
-    <%= f.input :features %>
+    <% 5.times do %>
+      <%= f.input :features %>
+    <% end %>
     <%= f.button :submit %>
   <% end %>
+</div>
+<div>
 </div>
