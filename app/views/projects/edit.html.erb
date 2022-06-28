@@ -2,11 +2,12 @@
   <%= simple_form_for @project do |f| %>
     <%= f.input :projectname %>
     <%= f.input :context %>
-    <% 5.times do %>
-      <%= f.input :features %>
-    <% end %>
     <%= f.button :submit %>
   <% end %>
 </div>
-<div>
+
+  <%= form_for @project do |f| %>
+    <%= f.check_box :features, { :multiple => true }, 'foo', nil  %>
+    <%= f.check_box :features, { :multiple => true }, 'foo', nil  %>
+  <% end %>
 </div>
