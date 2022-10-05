@@ -2,18 +2,17 @@
   display:flex;
   justify-content: space-evenly;
   height: 80vh;
-  // background-color: $backblue;
-  background-image: image-url("background-red.svg");
+  background-color: $backblue;
   width:100%;
-  object-fit:cover;
 }
 
 .banner-photo {
-  width: 80vh;
-  height: 80vh;
+  width: 200px;
+  height: 200px;
   margin: auto 0;
-  border-radius: 20%;
+  border-radius: 50%;
   vertical-align: baseline;
+  border: 1px solid red;
 }
 
 .banner-text {

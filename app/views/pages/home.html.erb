@@ -10,21 +10,14 @@
 </div>
 
 <!-- 222 Banner -->
-<div class="banner">
-  <div class="banner-text">
-    <h1 class="text-3xl font-bold underline">Développeur Ruby on Rails / JS</h1>
-    <h2 class="backblue">Disponible pour vos missions</h2>
-    <a href="#contact" class = "primary-button dark-button">Me contacter</a>
-  </div>
-  <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="banner-photo">
-</div>
+<%= render "banner" %>
 
 <!-- 333 A propos de moi -->
 <div class="container section" id="apropos">
   <div class="bloc-apropos">
     <img src= <%= image_path("lewagon.png")%> alt="photo-wagon" class="photo-a-propos">
     <div class="desc-a-propos">
-      <h2>A propos de moi</h2>
+      <h2><span class="gradient-text">01. </span>A propos de moi</h2>
       <p>Après le bac je fais des études d'ingénieur et une expérience en cabinet de conseil digital & growth, je me lance en
       freelance sur ces mêmes sujets pendant 1 an (SEO, prospection B2B & marketing Automation). J'apprends sur des missions transverses en touchant rapidement au côté technique
       avec l'utilisation de gestionnaires d'APIs, de page web (HTML/CSS), de JavaScript (Google Script).
@@ -36,7 +29,7 @@
 
 <%# Mes technologies %>
 <div class="section" id="technologie-div">
-    <h2 class="pb-4">Mes technologies</h2>
+    <h2 class="pb-4"><span class="gradient-text">02. </span>Mes technologies</h2>
   <div class="technologie-div">
     <div class="technos-wrapper py-2">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="logo-tech skill" />
@@ -127,40 +120,8 @@
 </div>
 
   <%# Réalisations  %>
-<div id="realisations" class="section">
-  <div class="container">
-    <h2 class="white mb-5">Mes réalisations</h2>
-    <div class="real-contain" data-controller="tabdisplay">
-      <ul class="nav nav-tabs project-tab" style="border-right:solid" id="tabs">
-        <li class="project-tab-list"><a href="#tab1" class="tab-link gradient-text bold  pb-1 selectedtab" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Projets personnels</a></li>
-        <li class="project-tab-list"><a href="#tab2" class="tab-link gradient-text bold pb-1" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Growth / Technique</a></li>
-        <li class="project-tab-list"><a href="#tab3" class="tab-link gradient-text bold pb-1" data-tabdisplay-target="texttab" data-toggle="tab" data-action="click->tabdisplay#change" >Freelance Code </a></li>
-      </ul>
-      <div class="tab-content">
-        <div class="cards-real">
-          <div class="tab-pane active show cards-real tab1" id="tab1" data-tabdisplay-target="tabproject">
-            <% @personalprojects.each do |project| %>
-              <%= render 'pages/projectcardfree', project: project %>
-              <%= render 'projects/show', project: project%>
-            <% end %>
-          </div>
-          <div class="tab-pane d-none cards-real tab2" id="tab2" data-tabdisplay-target="tabproject">
-            <% @growthprojects.each do |project| %>
-              <%= render 'pages/projectcardfree', project: project%>
-              <%= render 'projects/show', project: project%>
-            <% end %>
-          </div>
-          <div class="tab-pane d-none cards-real tab3" id="tab3" data-tabdisplay-target="tabproject">
-            <% @freelancecodeprojects.each do |project| %>
-              <%= render 'pages/projectcardfree', project: project%>
-              <%= render 'projects/show', project: project%>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render "project" %>
+<%= render "experience" %>
 
 <div id="review" class="section">
   <h2>Ce que disent mes clients</h2>
@@ -259,4 +220,35 @@
   <div class="footer-copyright">
     <p>Tristan Monteiro, 2021 Paris</p>
   </div>
+</div>
+
+<div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+        </li>
+        <li class="mr-2" role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+        </li>
+        <li role="presentation">
+            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+        </li>
+    </ul>
+</div>
+<div id="myTabContent">
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
 </div>
