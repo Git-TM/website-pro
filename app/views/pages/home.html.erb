@@ -36,29 +36,25 @@
 
 
 <h2 class="text-center">Mes expériences</h2>
-<div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-    <ul class="-mb-px text-sm font-medium text-center list-none" id="myTab" data-tabs-toggle="#myTabContent" data-controller="tabdisplay" role="tablist">
+<div data-controller="tabdisplay">
+  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul class="-mb-px text-sm font-medium text-center list-none" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
         <li class="mr-2" role="presentation">
-            <button class="inline-block p-4 rounded-t-lg border-b-2" id="profile-tab" data-tabdiplay-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" data-action="click->tabdisplay#change">Profile</button>
+            <button class="inline-block p-4 rounded-t-lg border-b-2" id="misterauto" data-tabdiplay-target="misterauto" type="button" role="tab" aria-controls="profile" aria-selected="false" data-action="click->tabdisplay#change">Mister Auto</button>
         </li>
         <li class="mr-2" role="presentation">
             <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
         </li>
     </ul>
-</div>
-<div id="myTabContent">
-    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+  </div>
+  <div id="myTabContent">
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="misterauto" role="tabpanel" aria-labelledby="profile-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">misterauto tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
     </div>
-    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="lewagon" role="tabpanel" aria-labelledby="dashboard-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the l<strong class="font-medium text-gray-800 dark:text-white">lewagon tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
     </div>
-    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-    </div>
-    <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
-        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-    </div>
+  </div>
 </div>
 
 <%# Footer %>
@@ -197,6 +193,35 @@
         <%= f.input :message, as: :text, class:"input-type" %>
         <%= f.button :submit, class: "primary-button dark-button", value: "Valider ma demande"%>
       <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="rounded border w-1/2 mx-auto mt-4">
+  <!-- Tabs -->
+  <ul id="tabs" class="inline-flex pt-2 px-1 w-full border-b">
+    <li class="bg-white px-4 text-gray-800 font-semibold py-2 rounded-t border-t border-r border-l -mb-px"><a id="default-tab" href="#first">Tab 1</a></li>
+    <li class="px-4 text-gray-800 font-semibold py-2 rounded-t"><a href="#second">Tab 2</a></li>
+    <li class="px-4 text-gray-800 font-semibold py-2 rounded-t"><a href="#third">Tab 3</a></li>
+    <li class="px-4 text-gray-800 font-semibold py-2 rounded-t"><a href="#fourth">Tab 4</a></li>
+  </ul>
+
+  <!-- Tab Contents -->
+  <div id="tab-contents">
+    <div id="first" class="p-4">
+      First tab
+    </div>
+    <div id="second" class="hidden p-4">
+      Second tab
+    </div>
+    <div id="third" class="hidden p-4">
+      Third tab
+    </div>
+    <div id="fourth" class="hidden p-4">
+      Fourth tab
     </div>
   </div>
 </div>
