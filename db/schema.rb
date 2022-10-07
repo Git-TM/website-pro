@@ -69,19 +69,11 @@ ActiveRecord::Schema.define(version: 2022_10_07_124400) do
     t.string "clientname"
     t.string "interval"
     t.string "role"
-    t.bigint "workfeature_id", null: false
+    t.string "feature", default: [], array: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "description"
-    t.index ["workfeature_id"], name: "index_workexperiences_on_workfeature_id"
-  end
-
-  create_table "workfeatures", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "technos", "projects"
-  add_foreign_key "workexperiences", "workfeatures"
 end
