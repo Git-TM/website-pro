@@ -4,8 +4,7 @@ class CreateWorkexperiences < ActiveRecord::Migration[6.1]
       t.string :clientname
       t.string :interval
       t.string :role
-      t.references :workfeature, null: false, foreign_key: true
-
+      t.string :feature, array: true, default: []
       t.timestamps
     end
   end
