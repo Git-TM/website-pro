@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_28_150028) do
+ActiveRecord::Schema.define(version: 2022_10_07_122537) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,9 +42,6 @@ ActiveRecord::Schema.define(version: 2022_06_28_150028) do
     t.string "projecttype"
     t.string "imgurl"
     t.string "logourl"
-    t.string "mokup"
-    t.string "logoclient"
-    t.string "client"
     t.text "features", default: [], array: true
     t.text "codetags", default: [], array: true
   end

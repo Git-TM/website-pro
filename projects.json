@@ -1,17 +1,4 @@
 {
-  "project1": {
-    "name": "Enrichissement de données",
-    "context": "Enrichissement de données des dirigeants de 13.000 entreprises",
-    "weblink": "",
-    "githublink": "back-csv.png",
-    "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
-    "category": "Freelance Web Dev",
-    "type": "Application web",
-    "imgurl": "back-csv.png",
-    "logourl": "logo-kaioit.png",
-    "features": ["Mise en place dune application Rails", "Intégration des contacts existants en BDD", "Intégration de Sidekiq", "Enrichissement automatisé via 3 appels APIs, Validation des données"]
-  },
-
   "project2": {
     "name": "Application web Skate",
     "context": "Application web à destination des skateurs parisiens",
@@ -32,7 +19,7 @@
     "context": "Site web Portfolio pour référencer mon travail freelance",
     "weblink": "",
     "githublink": "",
-    "codetags": "Ruby On Rails, Datepickr, Stimulus JS, CSS",
+    "codetags": "Ruby On Rails, Datepickr, StimulusJS, Tailwind",
     "description": "",
     "category": "Projets personnels",
     "type": "Site web",
@@ -53,20 +40,5 @@
     "imgurl": "mokup-tracking.png",
     "logourl": "",
     "features": "Mise en place de vue type Dashboard, Création des vues dates (Granularité semaine & mois), Intégration de chartkick.js, Définition d'objectifs : temps / finance, Création d'une API ouverte, Automatisation des flux de données "
-  }
-
-  ,
-  "project5": {
-    "name": "Emails transactionnels",
-    "context": "Migration de 10 emails transactionnelsen 19 langues vers Emarsys",
-    "weblink": "",
-    "githublink": "",
-    "codetags": ["Language ESN propre à Emarsys", "HTML / CSS pour l'emailing"],
-    "description": "",
-    "category": "Growth / Freelance",
-    "type": "Mission technique",
-    "imgurl": "mokup-tracking.png",
-    "logourl": "",
-    "features": "Mise en place de vue type Dashboard"
   }
 }
