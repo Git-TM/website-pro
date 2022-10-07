@@ -66,3 +66,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gem for email
 gem 'mail_form'
+
+gem "tailwindcss-rails", "~> 2.0"

@@ -5,14 +5,10 @@ body{
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  // color: white;
   background-color: $backblue;
   color: white;
 }
 
-.container {
-  padding: 30px 10px;
-}
 
 .background-sombre{
   background-color: $backblue;
@@ -22,28 +18,21 @@ body{
 
 h1 {
   font-size: 40px;
-  text-align: center;
   font-weight: bold;
 }
 
 h2 {
   font-size: 32px;
-  text-align: center;
   font-weight:normal;
 }
 
 h3 {
   font-size: 25px;
-  text-align: center;
   font-weight: bold;
 }
 
 p {
   font-size: 16px;
-}
-
-span {
-  text-align: center;
 }
 
 .title-white{
@@ -60,11 +49,19 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
+.bg-gradient{
+  background: linear-gradient(315deg, #FA7268 0%, #e63946 94%);
+}
+
 .bold{
   font-weight: bold;
   font-size: 25px;
 }
 
 .section{
-  padding: 20px 0;
+  padding: 20px 20px;
+}
+
+.banner {
+  height: 80vh;
 }

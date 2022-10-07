@@ -4,6 +4,6 @@ class PagesController < ApplicationController
     @growthprojects = Project.where(category: "Growth / Freelance")
     @personalprojects = Project.where(category: "Projets personnels")
     @freelancecodeprojects = Project.where(category: "Freelance Web Dev")
-    @projectall = Project.all
+    @projects = Project.all
   end
 end

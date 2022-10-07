@@ -1,29 +1,33 @@
 import { Controller } from "stimulus";
 
 export default class extends Controller {
-  static targets = ['tabproject', 'texttab'];
 
   connect() {
+    let tabsContainer = document.querySelector("#tabs");
+    let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+
+    console.log(tabTogglers);
+
+    tabTogglers.forEach(function (toggler) {
+      toggler.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let tabName = this.getAttribute("href");
+
+        let tabContents = document.querySelector("#tab-contents");
+
+        for (let i = 0; i < tabContents.children.length; i++) {
+
+          tabTogglers[i].parentElement.classList.remove("-mb-px", "bg-white"); tabContents.children[i].classList.remove("hidden");
+          if ("#" + tabContents.children[i].id === tabName) {
+            continue;
+          }
+          tabContents.children[i].classList.add("hidden");
+
+        }
+        e.target.parentElement.classList.add("-mb-px", "bg-white", "border-b");
+      });
+    });
  }
 
-  change(){
-    let selected = event.currentTarget.getAttribute("href");
-    event.currentTarget.classList.add("selectedtab")
-    this.texttabTargets.forEach(element => {
-      if (element.getAttribute("href") !== selected) {
-        element.classList.remove("selectedtab");
-      }
-    });
-    setTimeout(() => {
-      this.tabprojectTargets.forEach(element => {
-        if (element.classList.contains("active")) {
-          element.classList.remove("d-none");
-          element.classList.add("show");
-        } else if (element.classList.contains("active") == false) {
-          element.classList.add("d-none");
-          element.classList.remove("show");
-        }
-      });
-    }, 100);
-  }
 }

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_28_140456) do
+ActiveRecord::Schema.define(version: 2022_10_07_124400) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2022_06_28_140456) do
   create_table "projectfeatures", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -37,15 +38,19 @@ ActiveRecord::Schema.define(version: 2022_06_28_140456) do
     t.string "weblink"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "category"
     t.string "projecttype"
     t.string "imgurl"
     t.string "logourl"
-    t.string "mokup"
-    t.string "logoclient"
-    t.string "client"
     t.text "features", default: [], array: true
     t.text "codetags", default: [], array: true
+  end
+
+  create_table "technos", force: :cascade do |t|
+    t.string "name"
+    t.bigint "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["project_id"], name: "index_technos_on_project_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -60,4 +65,15 @@ ActiveRecord::Schema.define(version: 2022_06_28_140456) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "workexperiences", force: :cascade do |t|
+    t.string "clientname"
+    t.string "interval"
+    t.string "role"
+    t.string "feature", default: [], array: true
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "description"
+  end
+
+  add_foreign_key "technos", "projects"
 end
