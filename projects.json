@@ -1,5 +1,5 @@
 {
-  "project2": {
+  "project1": {
     "name": "Application web Skate",
     "context": "Application web à destination des skateurs parisiens",
     "weblink": "",
@@ -14,21 +14,21 @@
   }
 
   ,
-  "project3": {
+  "project2": {
     "name": "Site Web personnel",
     "context": "Site web Portfolio pour référencer mon travail freelance",
     "weblink": "",
     "githublink": "",
-    "codetags": "Ruby On Rails, Datepickr, StimulusJS, Tailwind",
+    "codetags": ["Ruby On Rails, StimulusJS, TailwindCSS, Heroku"],
     "description": "",
-    "category": "Projets personnels",
+    "category": "Projet personnel",
     "type": "Site web",
     "imgurl": "mokup-website.png",
     "logourl": "",
     "features": "Intégration de Datepickr, Activeview email, Ajouts d'effets CSS, Projets générés depuis un fichier JSON"
   },
 
-  "project4": {
+  "project3": {
     "name": "Application de tracking",
     "context": "Gestion du suivi temps et des finances personnels",
     "weblink": "",

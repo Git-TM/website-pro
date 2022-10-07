@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_07_122537) do
+ActiveRecord::Schema.define(version: 2022_10_07_124400) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,12 +38,19 @@ ActiveRecord::Schema.define(version: 2022_10_07_122537) do
     t.string "weblink"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "category"
     t.string "projecttype"
     t.string "imgurl"
     t.string "logourl"
     t.text "features", default: [], array: true
     t.text "codetags", default: [], array: true
+  end
+
+  create_table "technos", force: :cascade do |t|
+    t.string "name"
+    t.bigint "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["project_id"], name: "index_technos_on_project_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -58,4 +65,23 @@ ActiveRecord::Schema.define(version: 2022_10_07_122537) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "workexperiences", force: :cascade do |t|
+    t.string "clientname"
+    t.string "interval"
+    t.string "role"
+    t.bigint "workfeature_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "description"
+    t.index ["workfeature_id"], name: "index_workexperiences_on_workfeature_id"
+  end
+
+  create_table "workfeatures", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "technos", "projects"
+  add_foreign_key "workexperiences", "workfeatures"
 end
