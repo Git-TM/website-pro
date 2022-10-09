@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       UserMailer.with(contact: @contact).welcome_email.deliver_now
-      redirect_to root_path, notice: 'Message sent successfully'
+      redirect_to root_path, notice: 'Requête envoyée'
     end
 
   end
