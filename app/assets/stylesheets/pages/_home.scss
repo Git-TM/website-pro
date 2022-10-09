@@ -58,7 +58,7 @@ p {
 }
 
 .section{
-  padding: 40px 40px;
+  padding: 60px 40px;
 }
 
 .banner {
@@ -72,4 +72,17 @@ p {
 
 .list-colored li {
   margin-left: 15px;
+}
+
+.default-tab {
+  text-decoration: none;
+  opacity: .7;
+}
+
+.white-tab {
+  color:white;
+}
+
+.border-gradient {
+  border-right: solid 2px #FA7268;
 }
