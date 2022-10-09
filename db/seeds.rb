@@ -36,10 +36,10 @@ allkeys = data_hash.keys
 puts "---- Creating Projects----"
 allkeys.each do |key|
   new_workexperience = Workexperience.new(clientname: data_hash[key]['clientname'],
-                            interval:data_hash[key]['interval'],
-                            role:data_hash[key]['role'],
-                            feature: data_hash[key]['feature'],
-                            description:data_hash[key]['description'])
-  new_workexperience.save
+                                          interval: data_hash[key]['interval'],
+                                          role: data_hash[key]['role'],
+                                          feature: data_hash[key]['feature'],
+                                          description: data_hash[key]['description'])
+  new_workexperience.save!
   puts "---- #{data_hash[key]['clientname']} - Project created ----"
 end
