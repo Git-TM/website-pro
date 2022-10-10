@@ -3,7 +3,7 @@ require 'json'
 file_project = "projects.json"
 file_workexperience = "workexperiences.json"
 
-puts "---- DeletingProjects----"
+# puts "---- DeletingProjects----"
 Project.delete_all
 Workexperience.delete_all
 
@@ -14,6 +14,7 @@ allkeys = data_hash.keys
 
 puts "---- Creating Projects----"
 allkeys.each do |key|
+  puts data_hash[key]['codetags'].class
   new_project = Project.new(projectname: data_hash[key]['name'],
                             context:data_hash[key]['context'],
                             codetags:data_hash[key]['codetags'],

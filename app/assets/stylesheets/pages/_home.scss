@@ -26,6 +26,7 @@ h2 {
   font-size: 32px;
   font-weight:normal;
   font-family: $headers-font;
+  margin-top: 20px;
 }
 
 h3 {
@@ -62,7 +63,7 @@ p {
 }
 
 .banner {
-  height: 80vh;
+  height: 100vh;
 }
 
 .list-colored {
@@ -85,4 +86,25 @@ p {
 
 .border-gradient {
   border-right: solid 2px #FA7268;
+}
+
+.cta-red {
+  border: solid 1px #FA7268;
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.image-apropos {
+  top: -16px;
+  right: -16px;
+}
+
+.greyblue-bg {
+  background-color :#5D7B6A;
+}
+
+hr {
+  border: 1px solid gray;
+  opacity: .6;
+  margin-bottom: 12px;
 }

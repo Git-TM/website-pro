@@ -31,5 +31,38 @@
       "Paramétrage de l'outil de prospection, segmentation, automatisation multicanale Linkedin + Mail"
     ],
     "description": "Pour Goodwill (Digitalision des cabinets comptables), je les ai accompagné dans la structuration de leur prospection B2B, et son implémentation."
+  },
+  "workexperience5": {
+    "clientname": "Pschhh (ADPL Performance)",
+    "interval": "Mai 2021 - Juin 2022",
+    "role": "SEO ops",
+    "feature": [
+      "Mise en place d'un dashboard Google Data Studio pour les performances SEO d'une agence",
+      "Audit technique, sémantique, et fonctionelle. Formulation de recos d'optimisations",
+      "Analyse des mots clefs brainstorming + concurrence, scoring mot clefs et recommandation de mots clefs à positionner"
+    ],
+    "description": "L'agence Pschhh m'a sollicité afin de mieux piloter leurs activités SEO, et développer la partie contenu de leur site."
+  },
+  "workexperience6": {
+    "clientname": "Neoris",
+    "interval": "Septembre 2020 - Juin 2021",
+    "role": "Techninal Growth",
+    "feature": [
+      "Mise en place d'une stratégie automation, lead scoring, et contenu adapté aux phases de vie des prospects",
+      "Scraping d'une base de journaliste et mise en place du système de prospection pour obtenir des backlinks",
+      "Création d'une étude avec un cabinet, diffusion et obtention de visibilité (M6, blogs etc..)"
+    ],
+    "description": "Neoris souhaitait être accompagné sur des sujets SEO"
+  },
+  "workexperience4": {
+    "clientname": "Autres missions Growth",
+    "interval": "Septembre 2020 - Juin 2021",
+    "role": "Accompagnement Tech",
+    "feature": [
+      "Pour Mediapp : Prospection B2B, landing page, scraping base de prospects, segmentation",
+      "Pour Lilar-paris : Mise en place de scénarios automatiom (panier abandonnée, opt-in, campagnes mail",
+      "Diverses formations : Outil Sendinblue, gestionnaire d'APIs, Scraping / Automatisation"
+    ],
+    "description": "Activité Growth pendant 1 an et demi. Accompagnement de 9 entreprises sur des missions plus ou moins longues. CA : 12000€ en 9 mois"
   }
 }
