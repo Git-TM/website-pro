@@ -1,2 +1,0 @@
-class Workfeature < ApplicationRecord
-end

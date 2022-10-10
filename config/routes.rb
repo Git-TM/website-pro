@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :contacts, only: [ :new, :create ]
   resources :projects
+  get '/savecv', to: 'pages#savecv'
 end

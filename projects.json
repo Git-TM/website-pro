@@ -1,44 +1,44 @@
 {
   "project1": {
-    "name": "Application web Skate",
-    "context": "Application web à destination des skateurs parisiens",
+    "name": "SkateApp",
+    "context": "Application web qui permet aux skateurs parisiens de trouver les meilleurs endroits de la capitale, poster leurs vidéos sur des spots et voir le contenu des autres.",
     "weblink": "",
     "githublink": "",
-    "codetags": "Ruby On Rails, Sidekiq, APIs, societeinfo.com, pappers.fr",
+    "codetags": ["Ruby On Rails", "Bootstrap", "StimulusJS"],
     "description": "",
     "category": "Projets personnels",
     "type": "Application web",
     "imgurl": "maps-mission.png",
     "logourl": "logo-kaioit.png",
-    "features": "Mise en place d'une application Rails, Ajout de Sidekiq"
+    "features": ["Mise en place d'une application Rails", "Pagination infini", "Ajout de mapbox", "Import video via Cloudinary"]
   }
 
   ,
   "project2": {
     "name": "Site Web personnel",
-    "context": "Site web Portfolio pour référencer mon travail freelance",
-    "weblink": "",
-    "githublink": "",
-    "codetags": ["Ruby On Rails, StimulusJS, TailwindCSS, Heroku"],
+    "context": "Site web Portfolio pour référencer mon travail freelance. Interface admin personnel pour modifier mes projets et expériences.",
+    "weblink": "https://wwww.tristanmonteiro.com",
+    "githublink": "https://wwww.github.com/Git-TM/website-pro",
+    "codetags": ["Ruby On Rails", "StimulusJS", "TailwindCSS", "Heroku"],
     "description": "",
     "category": "Projet personnel",
     "type": "Site web",
     "imgurl": "mokup-website.png",
     "logourl": "",
-    "features": "Intégration de Datepickr, Activeview email, Ajouts d'effets CSS, Projets générés depuis un fichier JSON"
+    "features": ["Interface administrateur pour gérer mes projets et expériences", "Téléchargement de CV."]
   },
 
   "project3": {
     "name": "Application de tracking",
-    "context": "Gestion du suivi temps et des finances personnels",
+    "context": "Cette application permet de regrouper différents aspects : Tracking d'argent, de temps, scraping de livre, anniversaires de mes amis",
     "weblink": "",
     "githublink": "",
-    "codetags": "Ruby On Rails, Chartkick.js, Intégration d'APIs, Stimulus.js",
+    "codetags": ["Ruby On Rails", "Chartkick.js", "APIs", "Stimulus.js", "Heroku"],
     "description": "",
     "category": "Projets personnels",
     "type": "Application web",
     "imgurl": "mokup-tracking.png",
     "logourl": "",
-    "features": "Mise en place de vue type Dashboard, Création des vues dates (Granularité semaine & mois), Intégration de chartkick.js, Définition d'objectifs : temps / finance, Création d'une API ouverte, Automatisation des flux de données "
+    "features": ["Mise en place de vue type Dashboard", "Création des vues dates (Granularité semaine & mois)", "Intégration de chartkick.js", "Définition d'objectifs : temps / finance", "Création d'une API ouverte", "Automatisation des flux de données"]
   }
 }
