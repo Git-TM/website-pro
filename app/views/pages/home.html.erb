@@ -1,10 +1,10 @@
 <!-- 111 Navbar -->
 <div id="navbar">
   <img src=<%= image_path("logo.png")%> alt="photo" class="banner-logo">
-  <div class="flex justify-center invisible md:visible">
-    <a href="#skills" class="nav-category ">Formation</a>
-    <a href="#realisations" class="nav-category">Experience pro</a>
-    <a href="#contact" class="nav-category">Projets</a>
+  <div class="flex justify-center">
+    <a href="#formation" class="nav-category invisible w-0 md:visible md:w-auto">Formation</a>
+    <a href="#experience" class="nav-category invisible w-0 md:visible md:w-auto">Experience pro</a>
+    <a href="project" class="nav-category invisible w-0 md:visible md:w-auto">Projets</a>
     <%= link_to "Télécharger mon CV", savecv_path, class:"cta-red nav-category" %>
   </div>
 </div>
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<h2 class="text-center" id="apropos">A propos de moi</h2>
+<h2 class="text-center"><span class="gradient-text">01. </span>A propos de moi</h2>
 <div class="block md:flex section justify-evenly items-center">
   <div class="h-4/6 flex relative justify-center">
     <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="w-64 h-64 rounded border-double border-4 border-sky-500">
@@ -38,26 +38,26 @@
 <%= render "experience" %>
 
 <%# Mes technologies %>
+<h2 class="pb-4 text-center"><span class="gradient-text">03. </span>Mes technologies</h2>
 <div class="section" id="techno">
-    <h2 class="pb-4 text-center"><span class="gradient-text">02. </span>Mes technologies</h2>
-  <div class="relative h-52">
+  <div class="relative h-80 md:h-48">
     <div class="technos-wrapper py-2">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="logo-tech skill w-14 md:w-20 m-4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="logo-tech skill w-14 md:w-20 m-4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" class="logo-tech skill w-14 md:w-20 m-4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" class="logo-tech skill w-14 md:w-20 m-4"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" class="logo-tech skill w-14 md:w-20 m-4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" class="logo-tech skill w-14 md:w-20 m-4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" class="logo-tech skill w-14 md:w-20 m-4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" class="logo-tech skill w-14 md:w-20 m-4" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" class="logo-tech skill w-14 md:w-18 m-4" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" class="logo-tech skill w-14 md:w-18 m-4" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" class="logo-tech skill w-14 md:w-18 m-4" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" class="logo-tech skill w-14 md:w-18 m-4"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg" class="logo-tech skill w-14 md:w-18 m-4" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg" class="logo-tech skill w-14 md:w-18 m-4" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" class="logo-tech skill w-14 md:w-18 m-4" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" class="logo-tech skill w-14 md:w-18 m-4" />
     </div>
   </div>
 </div>
 
 
-<h2 class="text-center">Mes expériences pro</h2>
+<h2 class="text-center"><span class="gradient-text">04. </span>Mes expériences pro</h2>
+<div class="rounded w-full lg: w-4/5 xl:w-2/3 mx-auto mt-4 block lg:flex section justify-evenly" data-controller="tabdisplay" id="experience">
 <% first_id =  @workexperiences.first.id %>
-<div class="rounded w-full lg: w-4/5 xl:w-2/3 mx-auto mt-4 block md:flex section justify-evenly" data-controller="tabdisplay">
   <ul id="tabs" class="pt-2 px-1 w-fit md:w-1/5 inline">
   <%= %>
     <% @workexperiences.each do |exp| %>
@@ -97,9 +97,8 @@
 </div>
 
 
-
-<h2 class="text-center">Mes réalisations</h2>
-<div id="realisations" class="section">
+<div id="project" class="section">
+<h2 class="text-center"><span class="gradient-text">05. </span>Mes projets</h2>
   <div class="project-cards">
     <% @projects.each_with_index do |project, index| %>
       <div class="block lg:flex items-center justify-evenly mb-5 lg:mb-0">
