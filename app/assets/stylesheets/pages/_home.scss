@@ -26,7 +26,7 @@ h2 {
   font-size: 32px;
   font-weight:normal;
   font-family: $headers-font;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
 h3 {
@@ -35,9 +35,9 @@ h3 {
   font-family: $headers-font;
 }
 
-p {
-  font-size: 16px;
-}
+// p {
+//   font-size: 16px;
+// }
 
 .title-white{
   color: white;
@@ -92,11 +92,6 @@ p {
   border: solid 1px #FA7268;
   border-radius: 12px;
   padding: 12px 16px;
-}
-
-.image-apropos {
-  top: -16px;
-  right: -16px;
 }
 
 .greyblue-bg {
