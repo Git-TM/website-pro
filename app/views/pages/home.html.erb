@@ -4,7 +4,7 @@
   <div class="flex justify-center">
     <a href="#formation" class="nav-category invisible w-0 md:visible md:w-auto">Formation</a>
     <a href="#experience" class="nav-category invisible w-0 md:visible md:w-auto">Experience pro</a>
-    <a href="project" class="nav-category invisible w-0 md:visible md:w-auto">Projets</a>
+    <a href="#project" class="nav-category invisible w-0 md:visible md:w-auto">Projets</a>
     <%= link_to "Télécharger mon CV", savecv_path, class:"cta-red nav-category" %>
   </div>
 </div>
@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<h2 class="text-center"><span class="gradient-text">01. </span>A propos de moi</h2>
+<h2 class="text-center" id="apropos"><span class="gradient-text">01. </span>A propos de moi</h2>
 <div class="block md:flex section justify-evenly items-center">
   <div class="h-4/6 flex relative justify-center">
     <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="w-64 h-64 rounded border-double border-4 border-sky-500">
@@ -55,8 +55,8 @@
 </div>
 
 
-<h2 class="text-center"><span class="gradient-text">04. </span>Mes expériences pro</h2>
-<div class="rounded w-full lg: w-4/5 xl:w-2/3 mx-auto mt-4 block lg:flex section justify-evenly" data-controller="tabdisplay" id="experience">
+<h2 class="text-center" id="experience"><span class="gradient-text">04. </span>Mes expériences pro</h2>
+<div class="rounded w-full lg: w-4/5 xl:w-2/3 mx-auto mt-4 block lg:flex section justify-evenly" data-controller="tabdisplay">
 <% first_id =  @workexperiences.first.id %>
   <ul id="tabs" class="pt-2 px-1 w-fit md:w-1/5 inline">
   <%= %>
