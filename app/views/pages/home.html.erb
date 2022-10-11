@@ -1,30 +1,32 @@
 <!-- 111 Navbar -->
 <div id="navbar">
   <img src=<%= image_path("logo.png")%> alt="photo" class="banner-logo">
-  <div class="nav-categories">
-    <a href="#apropos" class="nav-category">A propos de moi</a>
-    <a href="#skills" class="nav-category">Mes compétences</a>
-    <a href="#realisations" class="nav-category">Mes réalisations</a>
-    <a href="#contact" class="nav-category">Contactez-moi !</a>
+  <div class="flex justify-center invisible md:visible">
+    <a href="#skills" class="nav-category ">Formation</a>
+    <a href="#realisations" class="nav-category">Experience pro</a>
+    <a href="#contact" class="nav-category">Projets</a>
     <%= link_to "Télécharger mon CV", savecv_path, class:"cta-red nav-category" %>
   </div>
 </div>
 
-<div class="inline-block md:flex relative md:static section justify-around leading-loose banner items-center">
-  <div class="text-left w-full md:w-2/4 md:w-full">
-    <p class="gradient-text">Salut, je suis </p>
-    <h1 class="text-6xl font-bold">Tristan Monteiro</h1>
-    <h3 class="mb-5">Ingénieur / développeur Ruby on Rails</h3>
-    <a href="#apropos" class="cta-red">En découvrir plus !</a>
+<div class="flex items-center banner items">
+  <div class="block m-auto md:flex section justify-around leading-9 md:leading-loose items-center text-center md:text-left">
+    <img src=<%= image_path("undraw-banner.svg")%> alt="photo" class="w-36 mx-auto md:w-1/3 text-center mt-5 visible md:invisible md:w-0">
+    <div class="w-full md:w-1/2">
+      <p class="gradient-text mb-5">Salut, je suis </p>
+      <h1 class="text-6xl font-bold mb-5">Tristan Monteiro</h1>
+      <h3 class="mb-10">Ingénieur / développeur Ruby on Rails</h3>
+      <a href="#apropos" class="cta-red">En découvrir plus !</a>
+    </div>
+    <img src=<%= image_path("undraw-banner.svg")%> alt="photo" class="w-36 mx-auto md:w-1/3 text-center mt-5 invisible md:visible">
   </div>
-    <img src=<%= image_path("undraw-banner.svg")%> alt="photo" class="w-1/3 absolute md:static right-8 top-8 md:inset-0">
 </div>
 
 <h2 class="text-center" id="apropos">A propos de moi</h2>
 <div class="block md:flex section justify-evenly items-center">
-  <div class="relative">
-    <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="w-64 rounded border-double border-4 border-sky-500">
-    <div class="w-64 h-64 rounded border-double border-4 border-white absolute image-apropos"></div>
+  <div class="h-4/6 flex relative justify-center">
+    <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="w-64 h-64 rounded border-double border-4 border-sky-500">
+    <div class="w-64 h-64 rounded border-double border-4 border-whiteimage-apropos absolute top-4 right-4 invisible md:visible"></div>
   </div>
   <div class="text-center md:text-left w-full md:w-1/3 mt-5 md:mt-0">
     <p class="pb-3">Après des études d'ingénieur, j'ai accompagné pendant 2 ans des jeunes start-ups à développer leurs processus commerciaux et digitaux (SEO, Automation, Scraping, automatisation de process). </p>
@@ -80,7 +82,7 @@
         <div class="p-4 hidden" id="<%= exp.clientname %>">
       <% end %>
           <p><%= exp.interval %></p>
-          <p class="gradient-text bold"><%= exp.role %></p>
+          <p class="gradient-text bold pb-3 md:pb-0"><%= exp.role %></p>
           <p class="pb-5"><%= exp.description %></p>
           <hr/>
           <ul class="list-colored">
@@ -88,7 +90,6 @@
               <li><%= feature %></li>
             <% end %>
           </ul>
-
         </div>
     <% end %>
     </div>
@@ -101,11 +102,12 @@
 <div id="realisations" class="section">
   <div class="project-cards">
     <% @projects.each_with_index do |project, index| %>
-      <div class="block lg:flex">
+      <div class="block lg:flex items-center justify-evenly mb-5 lg:mb-0">
+        <%= image_tag project.imgurl, { :class=>"w-full md:w-1/2 lg:w-0 mx-auto lg:mx-0 text-center mt-5 px-3 md:px-0 visible lg:invisible lg:h-0 first" } %>
         <% if index.even? %>
-          <%= image_tag project.imgurl, { class: "w-full md:w-1/2 lg:w-1/3 mt-5 lg:mt-0 px-3 md:px-0" } %>
+          <%= image_tag project.imgurl, { :class=>"w-0 md:w-full mx-auto lg:mx-0 text-center md:w-1/2 lg:w-1/3 mt-5 px-3 md:px-0 invisible lg:visible h-0 lg:h-auto second" } %>
         <% end  %>
-        <div class="project-card block lg:flex justify-evenly items-center pb-5 mt-16 w-full lg:w-1/3">
+        <div class="project-card block lg:flex justify-evenly items-center pb-5 mt-4 md:mt-16 w-full lg:w-1/3">
           <div class="block desc-content">
             <div class="flex justify-between">
               <h3 class ="text-center md:text-left"><%= project.projectname %></h3>
@@ -138,10 +140,10 @@
               <% end %>
             </ul>
           </div>
-          <% if index.odd? %>
-            <%= image_tag project.imgurl, { :class=>"w-full md:w-1/2 lg:w-1/3 mt-5 md:mt-0 px-3 md:px-0" } %>
-          <% end  %>
         </div>
+        <% if index.odd? %>
+          <%= image_tag project.imgurl, { :class=>"w-full mx-auto lg:mx-0 text-center md:w-1/2 lg:w-1/3 mt-5 px-3 md:px-0 invisible lg:visible h-0 lg:h-auto" } %>
+        <% end  %>
       </div>
     <% end %>
   </div>
