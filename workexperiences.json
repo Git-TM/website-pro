@@ -1,7 +1,7 @@
 {
   "workexperience1": {
     "clientname": "Mister Auto",
-    "interval": "Décembre 2021 - Septembre 2022",
+    "interval": "Décembre 2021 - Octobre 2022",
     "role": "Consultant digital",
     "feature": [
       "Intégration des emails sur la plateforme en HTML / CSS en suivant les best practices de l'emailing",
@@ -12,7 +12,7 @@
   },
   "workexperience2": {
     "clientname": "Le Wagon",
-    "interval": "Décembre 2021 - Septembre 2022",
+    "interval": "Décembre 2021 - Aujourd'hui",
     "role": "Professeur Assistant",
     "feature": [
       "Explication des concepts aux participants du Wagon pour les batchs ou workshop (X-HEC)",
