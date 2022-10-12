@@ -22,7 +22,7 @@
   </div>
 </div>
 
-<h2 class="text-center" id="apropos"><span class="gradient-text">01. </span>A propos de moi</h2>
+<h2 class="text-center md:text-3xl" id="apropos"><span class="gradient-text">01. </span>A propos de moi</h2>
 <div class="block md:flex section justify-evenly items-center">
   <div class="h-4/6 flex relative justify-center">
     <img src=<%= image_path("tristan-pro.png")%> alt="photo" class="w-64 h-64 rounded border-double border-4 border-sky-500">
@@ -38,7 +38,7 @@
 <%= render "experience" %>
 
 <%# Mes technologies %>
-<h2 class="pb-4 text-center"><span class="gradient-text">03. </span>Mes technologies</h2>
+<h2 class="pb-4 text-center md:text-3xl"><span class="gradient-text">03. </span>Mes technologies</h2>
 <div class="section" id="techno">
   <div class="relative h-80 md:h-48">
     <div class="technos-wrapper py-2">
@@ -55,18 +55,18 @@
 </div>
 
 
-<h2 class="text-center" id="experience"><span class="gradient-text">04. </span>Mes expériences pro</h2>
-<div class="rounded w-full lg: w-4/5 xl:w-2/3 mx-auto mt-4 block lg:flex section justify-evenly" data-controller="tabdisplay">
+<h2 class="text-center md:text-3xl" id="experience"><span class="gradient-text">04. </span>Mes expériences pro</h2>
+<div class="rounded w-full lg:w-4/5 xl:w-2/3 mx-auto mt-4 block lg:flex section justify-evenly" data-controller="tabdisplay">
 <% first_id =  @workexperiences.first.id %>
-  <ul id="tabs" class="pt-2 px-1 w-fit md:w-1/5 inline">
+  <ul id="tabs" class="py-2 px-1 mb-8 w-full md:w-1/5 flex md:inline overflow-x-auto md:overflow-auto">
   <%= %>
     <% @workexperiences.each do |exp| %>
         <% if exp.id == first_id  %>
-          <li class="gradient-text px-4 font-semibold py-2 border-gradient rounded-t-mb-px border-gradient">
+          <li class="gradient-text min-w-fit px-4 font-bold py-1 text-base md:py-2 border-gradient rounded-t-mb-px border-gradient">
             <a id="default-tab" href="#<%= exp.clientname %>"><%= exp.clientname %></a>
           </li>
           <% else %>
-          <li class="px-4 font-semibold py-2 white-tab">
+          <li class="px-4 font-light min-w-fit py-1 md:py-2 white-tab">
             <a id="default-tab" href="#<%= exp.clientname %>"><%= exp.clientname %></a>
           </li>
         <% end %>
@@ -77,9 +77,9 @@
   <div id="tab-contents" class="w-full md:2/3">
     <% @workexperiences.each do |exp| %>
       <% if exp.id == first_id %>
-        <div class="p-4" id="<%= exp.clientname %>">
+        <div class="md:p-4" id="<%= exp.clientname %>">
       <% else  %>
-        <div class="p-4 hidden" id="<%= exp.clientname %>">
+        <div class="md:p-4 hidden" id="<%= exp.clientname %>">
       <% end %>
           <p><%= exp.interval %></p>
           <p class="gradient-text bold pb-3 md:pb-0"><%= exp.role %></p>
@@ -98,7 +98,7 @@
 
 
 <div id="project" class="section">
-<h2 class="text-center"><span class="gradient-text">05. </span>Mes projets</h2>
+<h2 class="text-center md:text-3xl"><span class="gradient-text">05. </span>Mes projets</h2>
   <div class="project-cards">
     <% @projects.each_with_index do |project, index| %>
       <div class="block lg:flex items-center justify-evenly mb-5 lg:mb-0">
@@ -149,7 +149,7 @@
 </div>
 
 <%# Div Client %>
-<h2 class="text-center">Mes clients en parlent</h2>
+<h2 class="text-center md:text-3xl">Mes clients en parlent</h2>
 <div class="block md:flex max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words w-full mb-12 shadow-lg mt-16 justify-between">
     <div class="px-6 mx-3 my-5 md:my-0 bg-white rounded-xl">
         <div class="text-center mt-2">
