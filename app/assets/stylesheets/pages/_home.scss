@@ -27,6 +27,7 @@ h2 {
   font-weight:normal;
   font-family: $headers-font;
   margin: 20px 0px;
+  padding-bottom: 20px;
 }
 
 h3 {
@@ -92,7 +93,7 @@ h3 {
 }
 
 .greyblue-bg {
-  background-color :#5D7B6A;
+  background-color :rgb(93, 123, 106);
 }
 
 .greyblue {
@@ -103,4 +104,8 @@ hr {
   border: 1px solid gray;
   opacity: .6;
   margin-bottom: 12px;
+}
+
+.bshadow {
+  box-shadow: 0 40px 40px rgba(93, 123, 106, .1);
 }

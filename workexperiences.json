@@ -1,5 +1,16 @@
 {
   "workexperience1": {
+  "clientname": "Le Wagon",
+  "interval": "Décembre 2021 - Aujourd'hui",
+  "role": "Professeur Assistant",
+  "feature": [
+    "Explication des concepts aux participants du Wagon pour les batchs ou workshop (X-HEC)",
+    "Résolution de tickets pour les élèves qui bloquent sur les sujets suivants",
+    "Algorithme Ruby, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github"
+  ],
+  "description": ""
+},
+  "workexperience2": {
     "clientname": "Mister Auto",
     "interval": "Décembre 2021 - Octobre 2022",
     "role": "Consultant digital",
@@ -9,17 +20,6 @@
       "+1M1 mails envoyés, 96% délivrabilité"
     ],
     "description": "Lead opérationnel sur la mission entre la DSI et les équipes métiers pour la migration de l'ensemble des mails transactionnels de Mister Auto sur la plateforme de marketing automation Emarsys pour 13 pays et une quarantaine de mails."
-  },
-  "workexperience2": {
-    "clientname": "Le Wagon",
-    "interval": "Décembre 2021 - Aujourd'hui",
-    "role": "Professeur Assistant",
-    "feature": [
-      "Explication des concepts aux participants du Wagon pour les batchs ou workshop (X-HEC)",
-      "Résolution de tickets pour les élèves qui bloquent sur les sujets suivants",
-      "Algorithme Ruby, OOP, SQL, Front-end (HTML/CSS/JS), Ruby On Rails, Heroku, Git, Github"
-    ],
-    "description": ""
   },
   "workexperience3": {
     "clientname": "Goodwill",
@@ -49,8 +49,8 @@
     "role": "Techninal Growth",
     "feature": [
       "Mise en place d'une stratégie automation, lead scoring, et contenu adapté aux phases de vie des prospects",
-      "Scraping d'une base de journaliste et mise en place du système de prospection pour obtenir des backlinks",
-      "Création d'une étude avec un cabinet, diffusion et obtention de visibilité (M6, blogs etc..)"
+      "Création d'une étude avec un cabinet, diffusion et obtention de visibilité (M6, blogs etc..)",
+      "Scraping d'une base de journaliste, blogs et mise en place du système de prospection pour diffuser l'étude / obtenir des backlinks."
     ],
     "description": "Neoris souhaitait être accompagné sur des sujets SEO"
   },
@@ -61,7 +61,8 @@
     "feature": [
       "Pour Mediapp : Prospection B2B, landing page, scraping base de prospects, segmentation",
       "Pour Lilar-paris : Mise en place de scénarios automatiom (panier abandonnée, opt-in, campagnes mail",
-      "Formateur : Outil Sendinblue, gestionnaire d'APIs, Scraping / Automatisation"
+      "Formateur : Outil Sendinblue, gestionnaire d'APIs, Scraping / Automatisation",
+      "Neoris : Outil Sendinblue, gestionnaire d'APIs, Scraping / Automatisation"
     ],
     "description": "Activité Growth pendant 1 an et demi. Accompagnement de 9 entreprises sur des missions plus ou moins longues. CA : 12000€ en 9 mois"
   }
